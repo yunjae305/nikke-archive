@@ -1,8 +1,22 @@
 # NIKKE Archive
 
-Made by yunj305
+승리의 여신: 니케 팬 아카이브 사이트입니다.
 
-```bash
-npm install
-npm run dev
-```
+🔗 **https://nikkearc.vercel.app**
+
+---
+
+## 기능
+
+**육성 가이드**
+캐릭터별 스킬 레벨 권장 수치와 육성 우선순위를 확인할 수 있습니다.
+
+**라이브 2D 뷰어**
+인게임 Spine 모델을 브라우저에서 직접 감상하고 다양한 포즈를 확인할 수 있습니다.
+
+**도구 모음**
+전초기지 수익 계산기, 동조 비용 계산기, 알파 변환기 등 게임 플레이에 유용한 계산 도구를 제공합니다.
+
+---
+
+Made by [yunjae305](https://github.com/yunjae305)
