@@ -1,6 +1,6 @@
 # NIKKE Archive
 
-승리의 여신: 니케 팬 아카이브 사이트입니다.
+승리의 여신: 니케 아카이브 사이트입니다.
 
 🔗 **https://nikkearc.vercel.app**
 
