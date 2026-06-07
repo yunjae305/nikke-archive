@@ -29,7 +29,10 @@
         "recommended": [7, 10, 7],
         "maximum": [10, 10, 10]
       },
-      "overload": { "priority": ["장탄", "우월코드", "차지 속도"] },
+      "overload": {
+        "priority": ["우월코드 4"],
+        "subOptions": ["공격력", "장탄"]
+      },
       "cubes": [{ "id": "relic_bear", "priority": 1 }],
       "collectibles": [{ "id": "sr_doll", "level": 15 }],
       "note": "오버로드 중요도: 낮음\n시공중 버퍼\n관통, 발사체 폭발 버프\n민트와 같이 편성 시 프리카를 민트 왼쪽에 배치"
@@ -43,7 +46,10 @@
         "recommended": [7, 9, 9],
         "maximum": [10, 10, 10]
       },
-      "overload": { "priority": ["장탄", "우월코드", "공격력"] },
+      "overload": {
+        "priority": ["우월코드 4"],
+        "subOptions": ["공격력", "장탄"]
+      },
       "cubes": [{ "id": "relic_bear", "priority": 1 }],
       "collectibles": [{ "id": "sr_doll", "level": 15 }],
       "note": "오버로드 중요도: 낮음\n시공중 버퍼\n관통, 발사체 폭발 버프\n프리카와 같이 편성 시 민트를 프리카 오른쪽에 배치"
@@ -57,13 +63,13 @@
         "recommended": [7, 7, 7],
         "maximum": [10, 10, 10]
       },
-      "overload": { "priority": ["우월코드 4", "차지 속도 4", "공격력 3", "장탄 1"] },
+      "overload": { "priority": ["우월코드 4", "차지 속도 4"], "subOptions": ["공격력", "장탄"] },
       "cubes": [
         { "id": "relic_bear", "priority": 1 },
         { "id": "relic_boost", "priority": 2 }
       ],
       "collectibles": [{ "id": "sr_doll", "level": 15 }],
-      "note": "오버로드 중요도: 높음\n발사체 폭발 데미지\n차지 속도 옵션 14% 이상"
+      "note": "오버로드 중요도: 높음\n발사체 폭발 데미지\n차지 속도 옵션 14%"
     },
 
     "아니스 : 스타": {
@@ -74,7 +80,10 @@
         "recommended": [7, 7, 7],
         "maximum": [10, 10, 10]
       },
-      "overload": { "priority": ["우월코드 4", "공격력 4", "장탄 2", "크리티컬 확률", "크리티컬 데미지"] },
+      "overload": {
+        "priority": ["우월코드 4", "공격력 4", "장탄 2"],
+        "subOptions": ["크리티컬 확률", "크리티컬 데미지"]
+      },
       "cubes": [{ "id": "relic_bear", "priority": 1 }],
       "collectibles": [{ "id": "sr_doll", "level": 15 }],
       "note": "오버로드 중요도: 높음\n시공중 버퍼\n버스트 쿨감\n1버스트 니케 하나 더 편성 시 1버스트 재진입"
@@ -116,7 +125,10 @@
         "recommended": [7, 7, 7],
         "maximum": [10, 10, 10]
       },
-      "overload": { "priority": ["우월코드 4", "공격력 4", "크리티컬 확률", "크리티컬 데미지"] },
+      "overload": {
+        "priority": ["우월코드 4", "공격력 4", "크리티컬 데미지 2"],
+        "subOptions": ["크리티컬 확률"]
+      },
       "cubes": [
         { "id": "tactical_bear", "priority": 1 },
         { "id": "relic_bear", "priority": 2 }
@@ -133,7 +145,7 @@
         "recommended": [7, 7, 7],
         "maximum": [9, 9, 9]
       },
-      "overload": { "priority": ["우월코드", "장탄", "명중률"] },
+      "overload": { "priority": [] },
       "cubes": [
         { "id": "relic_bear", "priority": 1 },
         { "id": "relic_boost", "priority": 2 }
@@ -150,7 +162,10 @@
         "recommended": [1, 7, 7],
         "maximum": [7, 7, 7]
       },
-      "overload": { "priority": ["우월코드", "공격력"] },
+      "overload": {
+        "priority": ["우월코드 4"],
+        "subOptions": ["공격력"]
+      },
       "cubes": [
         { "id": "relic_bear", "priority": 1 },
         { "id": "relic_crash", "priority": 2 }
@@ -167,7 +182,10 @@
         "recommended": [7, 7, 7],
         "maximum": [10, 10, 10]
       },
-      "overload": { "priority": ["우월코드 4", "공격력 4", "장탄", "명중률", "크리티컬 확률", "크리티컬 데미지"] },
+      "overload": {
+        "priority": ["우월코드 4"],
+        "subOptions": ["공격력"]
+      },
       "cubes": [
         { "id": "relic_bear", "priority": 1 },
         { "id": "relic_crash", "priority": 2 }
@@ -184,12 +202,15 @@
         "recommended": [1, 7, 1],
         "maximum": [1, 10, 1]
       },
-      "overload": { "priority": ["우월코드", "공격력", "크리티컬 확률", "크리티컬 데미지"] },
+      "overload": {
+        "priority": ["우월코드 4", "장탄 2"],
+        "subOptions": ["공격력"]
+      },
       "cubes": [
         { "id": "relic_bear", "priority": 1 },
         { "id": "tactical_bear", "priority": 2 }
       ],
-      "collectibles": [{ "id": "sr_doll", "level": 5 }],
+      "collectibles": [{ "id": "sr_doll", "level": 15 }],
       "note": "오버로드 중요도: 낮음\n시공중 버퍼"
     },
 
@@ -202,8 +223,8 @@
         "maximum": [10, 10, 10]
       },
       "overload": {
-        "priority": ["우월코드 4", "공격력 4"],
-        "subOptions": ["크리티컬 확률", "크리티컬 데미지"]
+        "priority": ["우월코드 4", "공격력 4", "장탄 1"],
+        "subOptions": ["차지 속도"]
       },
       "cubes": [{ "id": "relic_bear", "priority": 1 }],
       "collectibles": [{ "id": "sr_doll", "level": 15 }],
@@ -218,7 +239,9 @@
         "recommended": [7, 7, 7],
         "maximum": [10, 10, 10]
       },
-      "overload": { "priority": ["우월코드 4", "공격력 4", "장탄 1", "크리티컬 데미지", "크리티컬 확률", "차지 데미지"] },
+      "overload": {
+        "priority": ["우월코드 4", "공격력 4", "장탄 3", "크리티컬 데미지 1"]
+      },
       "cubes": [
         { "id": "relic_bear", "priority": 1 },
         { "id": "relic_piercing", "priority": 2 }
@@ -235,10 +258,13 @@
         "recommended": [7, 7, 7],
         "maximum": [10, 10, 10]
       },
-      "overload": { "priority": ["우월코드 4", "공격력 4", "장탄", "크리티컬 확률", "크리티컬 데미지", "명중률"] },
+      "overload": {
+        "priority": ["우월코드 4", "공격력 4"],
+        "subOptions": ["장탄", "명중률", "크리티컬 확률", "크리티컬 데미지"]
+      },
       "cubes": [{ "id": "relic_bear", "priority": 1 }],
       "collectibles": [{ "id": "sr_doll", "level": 15 }],
-      "note": "오버로드 중요도: 보통\n시공중 버퍼"
+      "note": "오버로드 중요도: 낮음\n시공중 버퍼"
     },
 
     "디젤 : 윈터 스위츠": {
@@ -249,7 +275,10 @@
         "recommended": [7, 7, 7],
         "maximum": [10, 10, 10]
       },
-      "overload": { "priority": ["장탄 1", "우월코드 4", "공격력 4", "크리티컬 확률", "크리티컬 데미지"] },
+      "overload": {
+        "priority": ["우월코드 4", "공격력 4", "장탄 1"],
+        "subOptions": ["크리티컬 확률", "크리티컬 데미지"]
+      },
       "cubes": [{ "id": "relic_bear", "priority": 1 }],
       "collectibles": [{ "id": "sr_doll", "level": 15 }],
       "note": "오버로드 중요도: 보통\n지속 데미지"
@@ -263,7 +292,10 @@
         "recommended": [7, 1, 1],
         "maximum": [10, 1, 1]
       },
-      "overload": { "priority": ["우월코드", "공격력", "장탄"] },
+      "overload": {
+        "priority": ["우월코드 4"],
+        "subOptions": ["공격력", "장탄"]
+      },
       "cubes": [{ "id": "relic_bear", "priority": 1 }],
       "collectibles": [{ "id": "sr_doll", "level": 5 }],
       "note": "오버로드 중요도: 낮음\n버스트 쿨감"
@@ -277,7 +309,10 @@
         "recommended": [7, 7, 7],
         "maximum": [10, 10, 10]
       },
-      "overload": { "priority": ["차지 속도 2~4", "우월코드 4", "공격력 4", "장탄", "크리티컬 확률", "크리티컬 데미지"] },
+      "overload": {
+        "priority": ["우월코드 4", "공격력 4", "차지 속도 2~4", "장탄"],
+        "subOptions": ["크리티컬 확률", "크리티컬 데미지"]
+      },
       "cubes": [{ "id": "relic_bear", "priority": 1 }],
       "collectibles": [{ "id": "sr_doll", "level": 15 }],
       "note": "오버로드 중요도: 높음\n차지 속도 버프\n차지 속도 최소 6% 증가\n고점 17% 증가"
@@ -291,7 +326,10 @@
         "recommended": [7, 7, 7],
         "maximum": [10, 10, 10]
       },
-      "overload": { "priority": ["우월코드 4", "공격력 4", "차지 데미지", "크리티컬 확률", "크리티컬 데미지"] },
+      "overload": {
+        "priority": ["우월코드 4", "공격력 4"],
+        "subOptions": ["차지 데미지", "크리티컬 확률", "크리티컬 데미지"]
+      },
       "cubes": [
         { "id": "relic_bear", "priority": 1 },
         { "id": "tactical_assault", "priority": 2 }
@@ -325,7 +363,10 @@
         "recommended": [7, 4, 4],
         "maximum": [10, 4, 4]
       },
-      "overload": { "priority": ["우월코드", "장탄", "공격력"] },
+      "overload": {
+        "priority": ["우월코드 4"],
+        "subOptions": ["장탄", "공격력"]
+      },
       "cubes": [
         { "id": "relic_bear", "priority": 1 },
         { "id": "tactical_bear", "priority": 2 }
@@ -342,7 +383,10 @@
         "recommended": [7, 7, 7],
         "maximum": [10, 10, 10]
       },
-      "overload": { "priority": ["우월코드", "공격력", "크리티컬 확률", "크리티컬 데미지"] },
+      "overload": {
+        "priority": ["우월코드 4", "공격력 4"],
+        "subOptions": ["크리티컬 확률", "크리티컬 데미지"]
+      },
       "cubes": [{ "id": "relic_bear", "priority": 1 }],
       "collectibles": [{ "id": "sr_doll", "level": 5 }],
       "note": "오버로드 중요도: 낮음\n방어력 무시 데미지\n장탄 옵션 X"
@@ -356,7 +400,10 @@
         "recommended": [7, 7, 7],
         "maximum": [10, 10, 10]
       },
-      "overload": { "priority": ["우월코드", "공격력", "장탄"] },
+      "overload": {
+        "priority": ["우월코드 4", "공격력 4"],
+        "subOptions": ["장탄"]
+      },
       "cubes": [{ "id": "relic_bear", "priority": 1 }],
       "collectibles": [{ "id": "sr_doll", "level": 15 }],
       "note": "오버로드 중요도: 낮음\n시공중 버퍼\n방어력 무시 버프"
@@ -370,7 +417,10 @@
         "recommended": [7, 7, 7],
         "maximum": [10, 10, 10]
       },
-      "overload": { "priority": ["장탄 2", "우월코드 4", "공격력 2", "크리티컬 확률", "크리티컬 데미지"] },
+      "overload": {
+        "priority": ["우월코드 4", "공격력 2", "장탄 2"],
+        "subOptions": ["크리티컬 확률", "크리티컬 데미지"]
+      },
       "cubes": [{ "id": "relic_bear", "priority": 1 }],
       "collectibles": [{ "id": "sr_doll", "level": 15 }],
       "note": "오버로드 중요도: 보통\n관통 특화\n전투 시작 시, 본인 버스트 끝난 후 0.5초 풀차지 유지 / 6초마다 풀차지"
@@ -384,7 +434,10 @@
         "recommended": [7, 7, 7],
         "maximum": [10, 10, 10]
       },
-      "overload": { "priority": ["차지 속도", "장탄", "공격력", "우월코드"] },
+      "overload": {
+        "priority": ["우월코드 4", "공격력 4"],
+        "subOptions": ["차지 속도", "장탄"]
+      },
       "cubes": [{ "id": "relic_bear", "priority": 1 }],
       "collectibles": [{ "id": "sr_doll", "level": 15 }],
       "note": "오버로드 중요도: 낮음\n관통 버프\n시공중 버퍼"
@@ -398,7 +451,10 @@
         "recommended": [7, 7, 7],
         "maximum": [10, 10, 10]
       },
-      "overload": { "priority": ["우월코드 4", "공격력 4", "차지 속도 3", "장탄 1"] },
+      "overload": {
+        "priority": ["우월코드 4", "공격력 4", "차지 속도 3", "장탄 1"],
+        "subOptions": []
+      },
       "cubes": [{ "id": "relic_bear", "priority": 1 }],
       "collectibles": [{ "id": "sr_doll", "level": 15 }],
       "note": "오버로드 중요도: 보통\n방어력 무시 데미지 #택스티\n장탄 1줄 기준 옵션(5,6,7 단계)"
@@ -412,7 +468,10 @@
         "recommended": [7, 7, 7],
         "maximum": [10, 10, 10]
       },
-      "overload": { "priority": ["우월코드", "공격력", "장탄"] },
+      "overload": {
+        "priority": ["우월코드 4", "공격력 4"],
+        "subOptions": ["장탄"]
+      },
       "cubes": [{ "id": "relic_bear", "priority": 1 }],
       "collectibles": [{ "id": "sr_doll", "level": 5 }],
       "note": "오버로드 중요도: 낮음\n방어력 무시 데미지\n택화"
