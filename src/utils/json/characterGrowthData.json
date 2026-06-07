@@ -1,0 +1,2667 @@
+﻿{
+  "characters": {
+    "라피 : 레드 후드": {
+      "name": "라피 : 레드 후드",
+      "image": "/assets/characters/rapi_redhood.png",
+      "skillPriority": ["버스트", "스킬1", "스킬2"],
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [7, 7, 7],
+        "maximum": [10, 10, 10]
+      },
+      "overload": {
+        "priority": ["장탄 2~4", "우월코드 4", "공격력 4"],
+        "subOptions": ["크리티컬 확률", "크리티컬 데미지"]
+      },
+      "cubes": [
+        { "id": "relic_bear", "priority": 1 },
+        { "id": "tactical_bear", "priority": 2 }
+      ],
+      "collectibles": [{ "id": "sr_doll", "level": 15 }],
+      "note": "오버로드 중요도: 높음\n스쿼드에 1버스트 없을 경우 1버스트로 변함"
+    },
+
+    "프리카": {
+      "name": "프리카",
+      "image": "/assets/characters/privaty.png",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [7, 10, 7],
+        "maximum": [10, 10, 10]
+      },
+      "overload": { "priority": ["장탄", "우월코드", "차지 속도"] },
+      "cubes": [{ "id": "relic_bear", "priority": 1 }],
+      "collectibles": [{ "id": "sr_doll", "level": 15 }],
+      "note": "오버로드 중요도: 낮음\n시공중 버퍼\n관통, 발사체 폭발 버프\n민트와 같이 편성 시 프리카를 민트 왼쪽에 배치"
+    },
+
+    "민트": {
+      "name": "민트",
+      "image": "/assets/characters/mint.png",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [7, 9, 9],
+        "maximum": [10, 10, 10]
+      },
+      "overload": { "priority": ["장탄", "우월코드", "공격력"] },
+      "cubes": [{ "id": "relic_bear", "priority": 1 }],
+      "collectibles": [{ "id": "sr_doll", "level": 15 }],
+      "note": "오버로드 중요도: 낮음\n시공중 버퍼\n관통, 발사체 폭발 버프\n프리카와 같이 편성 시 민트를 프리카 오른쪽에 배치"
+    },
+
+    "네온 : 비전 아이": {
+      "name": "네온 : 비전 아이",
+      "image": "/assets/characters/neon_vision_eye.png",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [7, 7, 7],
+        "maximum": [10, 10, 10]
+      },
+      "overload": { "priority": ["우월코드 4", "차지 속도 4", "공격력 3", "장탄 1"] },
+      "cubes": [
+        { "id": "relic_bear", "priority": 1 },
+        { "id": "relic_boost", "priority": 2 }
+      ],
+      "collectibles": [{ "id": "sr_doll", "level": 15 }],
+      "note": "오버로드 중요도: 높음\n발사체 폭발 데미지\n차지 속도 옵션 14% 이상"
+    },
+
+    "아니스 : 스타": {
+      "name": "아니스 : 스타",
+      "image": "/assets/characters/anis_star.png",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [7, 7, 7],
+        "maximum": [10, 10, 10]
+      },
+      "overload": { "priority": ["우월코드 4", "공격력 4", "장탄 2", "크리티컬 확률", "크리티컬 데미지"] },
+      "cubes": [{ "id": "relic_bear", "priority": 1 }],
+      "collectibles": [{ "id": "sr_doll", "level": 15 }],
+      "note": "오버로드 중요도: 높음\n시공중 버퍼\n버스트 쿨감\n1버스트 니케 하나 더 편성 시 1버스트 재진입"
+    },
+
+    "아비스타": {
+      "name": "아비스타",
+      "image": "/assets/characters/avista.png",
+      "skillLevels": {
+        "minimum": [1, 1, 1],
+        "recommended": [1, 1, 1],
+        "maximum": [1, 1, 1]
+      },
+      "overload": { "priority": [] },
+      "cubes": [{ "id": "relic_bear", "priority": 1 }],
+      "collectibles": [],
+      "note": "오버로드 중요도: X"
+    },
+
+    "백학": {
+      "name": "백학",
+      "image": "/assets/characters/baekhak.png",
+      "skillLevels": {
+        "minimum": [1, 1, 1],
+        "recommended": [1, 1, 1],
+        "maximum": [1, 1, 1]
+      },
+      "overload": { "priority": [] },
+      "cubes": [{ "id": "relic_bear", "priority": 1 }],
+      "collectibles": [],
+      "note": "오버로드 중요도: X"
+    },
+
+    "아르카나 : 포츈 메이트": {
+      "name": "아르카나 : 포츈 메이트",
+      "image": "/assets/characters/arcana_fortune_mate.png",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [7, 7, 7],
+        "maximum": [10, 10, 10]
+      },
+      "overload": { "priority": ["우월코드 4", "공격력 4", "크리티컬 확률", "크리티컬 데미지"] },
+      "cubes": [
+        { "id": "tactical_bear", "priority": 1 },
+        { "id": "relic_bear", "priority": 2 }
+      ],
+      "collectibles": [{ "id": "sr_doll", "level": 15 }],
+      "note": "오버로드 중요도: 보통\n시공중 버퍼\n장탄 옵션 1줄 이상 있다면 렐릭 베어 고려 가능"
+    },
+
+    "E.H.": {
+      "name": "E.H.",
+      "image": "/assets/characters/eh.png",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [7, 7, 7],
+        "maximum": [9, 9, 9]
+      },
+      "overload": { "priority": ["우월코드", "장탄", "명중률"] },
+      "cubes": [
+        { "id": "relic_bear", "priority": 1 },
+        { "id": "relic_boost", "priority": 2 }
+      ],
+      "collectibles": [{ "id": "sr_doll", "level": 5 }],
+      "note": "오버로드 중요도: X"
+    },
+
+    "타키나": {
+      "name": "타키나",
+      "image": "/assets/characters/inoue_takina.png",
+      "skillLevels": {
+        "minimum": [1, 4, 4],
+        "recommended": [1, 7, 7],
+        "maximum": [7, 7, 7]
+      },
+      "overload": { "priority": ["우월코드", "공격력"] },
+      "cubes": [
+        { "id": "relic_bear", "priority": 1 },
+        { "id": "relic_crash", "priority": 2 }
+      ],
+      "collectibles": [{ "id": "sr_doll", "level": 5 }],
+      "note": "오버로드 중요도: 낮음\n방어력 무시 버프"
+    },
+
+    "치사토": {
+      "name": "치사토",
+      "image": "/assets/characters/nishikigi_chisato.png",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [7, 7, 7],
+        "maximum": [10, 10, 10]
+      },
+      "overload": { "priority": ["우월코드 4", "공격력 4", "장탄", "명중률", "크리티컬 확률", "크리티컬 데미지"] },
+      "cubes": [
+        { "id": "relic_bear", "priority": 1 },
+        { "id": "relic_crash", "priority": 2 }
+      ],
+      "collectibles": [{ "id": "sr_doll", "level": 15 }],
+      "note": "오버로드 중요도: 보통\n방어력 무시 데미지"
+    },
+
+    "벨벳": {
+      "name": "벨벳",
+      "image": "/assets/characters/velvet.png",
+      "skillLevels": {
+        "minimum": [1, 4, 1],
+        "recommended": [1, 7, 1],
+        "maximum": [1, 10, 1]
+      },
+      "overload": { "priority": ["우월코드", "공격력", "크리티컬 확률", "크리티컬 데미지"] },
+      "cubes": [
+        { "id": "relic_bear", "priority": 1 },
+        { "id": "tactical_bear", "priority": 2 }
+      ],
+      "collectibles": [{ "id": "sr_doll", "level": 5 }],
+      "note": "오버로드 중요도: 낮음\n시공중 버퍼"
+    },
+
+    "레이븐": {
+      "name": "레이븐",
+      "image": "/assets/characters/raven.png",
+      "skillLevels": {
+        "minimum": [10, 7, 7],
+        "recommended": [10, 7, 10],
+        "maximum": [10, 10, 10]
+      },
+      "overload": {
+        "priority": ["우월코드 4", "공격력 4"],
+        "subOptions": ["크리티컬 확률", "크리티컬 데미지"]
+      },
+      "cubes": [{ "id": "relic_bear", "priority": 1 }],
+      "collectibles": [{ "id": "sr_doll", "level": 15 }],
+      "note": "오버로드 중요도: 보통\n1스킬이 가장 중요(지속 대미지, 자공증)\n장탄/차지속도 불필요, 자공증 47%"
+    },
+
+    "스노우 화이트 : 헤비암즈": {
+      "name": "스노우 화이트 : 헤비암즈",
+      "image": "/assets/characters/snow_white_heavy_arms.png",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [7, 7, 7],
+        "maximum": [10, 10, 10]
+      },
+      "overload": { "priority": ["우월코드 4", "공격력 4", "장탄 1", "크리티컬 데미지", "크리티컬 확률", "차지 데미지"] },
+      "cubes": [
+        { "id": "relic_bear", "priority": 1 },
+        { "id": "relic_piercing", "priority": 2 }
+      ],
+      "collectibles": [{ "id": "sr_doll", "level": 15 }],
+      "note": "오버로드 중요도: 높음\n관통 특화 #파츠 데미지\n차지 속도 옵션 적용 X"
+    },
+
+    "브리드 : 사일런트 트랙": {
+      "name": "브리드 : 사일런트 트랙",
+      "image": "/assets/characters/brid_silent_track.png",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [7, 7, 7],
+        "maximum": [10, 10, 10]
+      },
+      "overload": { "priority": ["우월코드 4", "공격력 4", "장탄", "크리티컬 확률", "크리티컬 데미지", "명중률"] },
+      "cubes": [{ "id": "relic_bear", "priority": 1 }],
+      "collectibles": [{ "id": "sr_doll", "level": 15 }],
+      "note": "오버로드 중요도: 보통\n시공중 버퍼"
+    },
+
+    "디젤 : 윈터 스위츠": {
+      "name": "디젤 : 윈터 스위츠",
+      "image": "/assets/characters/diesel_winter_sweets.png",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [7, 7, 7],
+        "maximum": [10, 10, 10]
+      },
+      "overload": { "priority": ["장탄 1", "우월코드 4", "공격력 4", "크리티컬 확률", "크리티컬 데미지"] },
+      "cubes": [{ "id": "relic_bear", "priority": 1 }],
+      "collectibles": [{ "id": "sr_doll", "level": 15 }],
+      "note": "오버로드 중요도: 보통\n지속 데미지"
+    },
+
+    "솔린 : 프로스트 티켓": {
+      "name": "솔린 : 프로스트 티켓",
+      "image": "/assets/characters/soline_frost_ticket.png",
+      "skillLevels": {
+        "minimum": [4, 1, 1],
+        "recommended": [7, 1, 1],
+        "maximum": [10, 1, 1]
+      },
+      "overload": { "priority": ["우월코드", "공격력", "장탄"] },
+      "cubes": [{ "id": "relic_bear", "priority": 1 }],
+      "collectibles": [{ "id": "sr_doll", "level": 5 }],
+      "note": "오버로드 중요도: 낮음\n버스트 쿨감"
+    },
+
+    "리버렐리오": {
+      "name": "리버렐리오",
+      "image": "/assets/characters/liberelio.png",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [7, 7, 7],
+        "maximum": [10, 10, 10]
+      },
+      "overload": { "priority": ["차지 속도 2~4", "우월코드 4", "공격력 4", "장탄", "크리티컬 확률", "크리티컬 데미지"] },
+      "cubes": [{ "id": "relic_bear", "priority": 1 }],
+      "collectibles": [{ "id": "sr_doll", "level": 15 }],
+      "note": "오버로드 중요도: 높음\n차지 속도 버프\n차지 속도 최소 6% 증가\n고점 17% 증가"
+    },
+
+    "나유타": {
+      "name": "나유타",
+      "image": "/assets/characters/nayuta.png",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [7, 7, 7],
+        "maximum": [10, 10, 10]
+      },
+      "overload": { "priority": ["우월코드 4", "공격력 4", "차지 데미지", "크리티컬 확률", "크리티컬 데미지"] },
+      "cubes": [
+        { "id": "relic_bear", "priority": 1 },
+        { "id": "tactical_assault", "priority": 2 }
+      ],
+      "collectibles": [{ "id": "sr_doll", "level": 15 }],
+      "note": "오버로드 중요도: 보통\n시공중 버퍼\n버스트 사용 시 무한 장탄"
+    },
+
+    "차임": {
+      "name": "차임",
+      "image": "/assets/characters/chime.png",
+      "skillLevels": {
+        "minimum": [1, 1, 1],
+        "recommended": [1, 1, 1],
+        "maximum": [1, 1, 1]
+      },
+      "overload": { "priority": [] },
+      "cubes": [
+        { "id": "relic_bear", "priority": 1 },
+        { "id": "tactical_bear", "priority": 2 }
+      ],
+      "collectibles": [],
+      "note": "오버로드 중요도: X"
+    },
+
+    "델타 : 닌자 시프": {
+      "name": "델타 : 닌자 시프",
+      "image": "/assets/characters/delta_ninja_thief.png",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [7, 4, 4],
+        "maximum": [10, 4, 4]
+      },
+      "overload": { "priority": ["우월코드", "장탄", "공격력"] },
+      "cubes": [
+        { "id": "relic_bear", "priority": 1 },
+        { "id": "tactical_bear", "priority": 2 }
+      ],
+      "collectibles": [{ "id": "sr_doll", "level": 5 }],
+      "note": "오버로드 중요도: 낮음\n분배 데미지"
+    },
+
+    "질": {
+      "name": "질",
+      "image": "/assets/characters/jill_valentine.png",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [7, 7, 7],
+        "maximum": [10, 10, 10]
+      },
+      "overload": { "priority": ["우월코드", "공격력", "크리티컬 확률", "크리티컬 데미지"] },
+      "cubes": [{ "id": "relic_bear", "priority": 1 }],
+      "collectibles": [{ "id": "sr_doll", "level": 5 }],
+      "note": "오버로드 중요도: 낮음\n방어력 무시 데미지\n장탄 옵션 X"
+    },
+
+    "에이다": {
+      "name": "에이다",
+      "image": "/assets/characters/ada_wong.png",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [7, 7, 7],
+        "maximum": [10, 10, 10]
+      },
+      "overload": { "priority": ["우월코드", "공격력", "장탄"] },
+      "cubes": [{ "id": "relic_bear", "priority": 1 }],
+      "collectibles": [{ "id": "sr_doll", "level": 15 }],
+      "note": "오버로드 중요도: 낮음\n시공중 버퍼\n방어력 무시 버프"
+    },
+
+    "밀크 : 블루밍 바니": {
+      "name": "밀크 : 블루밍 바니",
+      "image": "/assets/characters/milk_blooming_bunny.png",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [7, 7, 7],
+        "maximum": [10, 10, 10]
+      },
+      "overload": { "priority": ["장탄 2", "우월코드 4", "공격력 2", "크리티컬 확률", "크리티컬 데미지"] },
+      "cubes": [{ "id": "relic_bear", "priority": 1 }],
+      "collectibles": [{ "id": "sr_doll", "level": 15 }],
+      "note": "오버로드 중요도: 보통\n관통 특화\n전투 시작 시, 본인 버스트 끝난 후 0.5초 풀차지 유지 / 6초마다 풀차지"
+    },
+
+    "에이드 : 에이전트 바니": {
+      "name": "에이드 : 에이전트 바니",
+      "image": "/assets/characters/ade_agent_bunny.png",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [7, 7, 7],
+        "maximum": [10, 10, 10]
+      },
+      "overload": { "priority": ["차지 속도", "장탄", "공격력", "우월코드"] },
+      "cubes": [{ "id": "relic_bear", "priority": 1 }],
+      "collectibles": [{ "id": "sr_doll", "level": 15 }],
+      "note": "오버로드 중요도: 낮음\n관통 버프\n시공중 버퍼"
+    },
+
+    "베스티 : 택티컬 업": {
+      "name": "베스티 : 택티컬 업",
+      "image": "/assets/characters/vesti_tactical_up.png",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [7, 7, 7],
+        "maximum": [10, 10, 10]
+      },
+      "overload": { "priority": ["우월코드 4", "공격력 4", "차지 속도 3", "장탄 1"] },
+      "cubes": [{ "id": "relic_bear", "priority": 1 }],
+      "collectibles": [{ "id": "sr_doll", "level": 15 }],
+      "note": "오버로드 중요도: 보통\n방어력 무시 데미지 #택스티\n장탄 1줄 기준 옵션(5,6,7 단계)"
+    },
+
+    "은화 : 택티컬 업": {
+      "name": "은화 : 택티컬 업",
+      "image": "/assets/characters/eunhwa_tactical_up.png",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [7, 7, 7],
+        "maximum": [10, 10, 10]
+      },
+      "overload": { "priority": ["우월코드", "공격력", "장탄"] },
+      "cubes": [{ "id": "relic_bear", "priority": 1 }],
+      "collectibles": [{ "id": "sr_doll", "level": 5 }],
+      "note": "오버로드 중요도: 낮음\n방어력 무시 데미지\n택화"
+    },
+
+    "엠마 : 택티컬 업": {
+      "name": "엠마 : 택티컬 업",
+      "image": "/assets/characters/emma_tactical_up.png",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [7, 9, 9],
+        "maximum": [10, 10, 10]
+      },
+      "overload": { "priority": ["장탄 2", "우월코드", "공격력"] },
+      "cubes": [{ "id": "relic_bear", "priority": 1 }],
+      "collectibles": [{ "id": "sr_doll", "level": 5 }],
+      "note": "오버로드 중요도: 낮음\n방어력 무시 버프\n시공중 버퍼\n택화 혹은 택스티 없이 사용 불가"
+    },
+
+    "일레그 : 붐 앤 쇼크": {
+      "name": "일레그 : 붐 앤 쇼크",
+      "image": "/assets/characters/elegg_boom_and_shock.png",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": ["7~10", 7, 7],
+        "maximum": [10, 10, 10]
+      },
+      "overload": { "priority": ["우월코드 4", "공격력 4", "장탄 1~2", "크리티컬 확률", "크리티컬 데미지"] },
+      "cubes": [{ "id": "relic_bear", "priority": 1 }],
+      "collectibles": [{ "id": "sr_doll", "level": 15 }],
+      "note": "오버로드 중요도: 보통\n수냉 아군 시공중 버프, 우월코드 버프"
+    },
+
+    "도로시 : 세렌디피티": {
+      "name": "도로시 : 세렌디피티",
+      "image": "/assets/characters/dorothy_serendipity.png",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [7, 7, 7],
+        "maximum": [10, 10, 10]
+      },
+      "overload": { "priority": ["우월코드 4", "공격력 4", "장탄 1", "크리티컬 확률", "크리티컬 데미지", "명중률"] },
+      "cubes": [{ "id": "relic_bear", "priority": 1 }],
+      "collectibles": [{ "id": "sr_doll", "level": 15 }],
+      "note": "오버로드 중요도: 높음\n관통 특화\n수로시\n크리티컬 관련 혹은 명중률 중 점지받는 옵션으로 세팅"
+    },
+
+    "소라": {
+      "name": "소라",
+      "image": "/assets/characters/sora.png",
+      "skillLevels": {
+        "minimum": [1, 1, 1],
+        "recommended": [1, 1, 1],
+        "maximum": [1, 1, 1]
+      },
+      "overload": { "priority": [] },
+      "cubes": [{ "id": "relic_bear", "priority": 1 }],
+      "collectibles": [],
+      "note": "오버로드 중요도: X"
+    },
+
+    "이브": {
+      "name": "이브",
+      "image": "/assets/characters/eve.png",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [7, 7, 7],
+        "maximum": [10, 10, 10]
+      },
+      "overload": { "priority": ["우월코드 4", "공격력 4", "장탄 1", "크리티컬 데미지", "크리티컬 확률"] },
+      "cubes": [{ "id": "relic_bear", "priority": 1 }],
+      "collectibles": [{ "id": "sr_doll", "level": 15 }],
+      "note": "오버로드 중요도: 보통\n파츠 데미지\n자체 크리티컬 확률 75%로 크리티컬 데미지 효율 높음"
+    },
+
+    "K": {
+      "name": "K",
+      "image": "/assets/characters/k.png",
+      "skillLevels": {
+        "minimum": [1, 1, 1],
+        "recommended": [1, 1, 1],
+        "maximum": [1, 1, 1]
+      },
+      "overload": { "priority": [] },
+      "cubes": [{ "id": "relic_bear", "priority": 1 }],
+      "collectibles": [],
+      "note": "오버로드 중요도: X"
+    },
+
+    "아르카나": {
+      "name": "아르카나",
+      "image": "/assets/characters/arcana.png",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [7, 7, 7],
+        "maximum": [10, 10, 10]
+      },
+      "overload": { "priority": ["장탄", "차지 속도", "우월코드", "공격력"] },
+      "cubes": [{ "id": "relic_bear", "priority": 1 }],
+      "collectibles": [{ "id": "sr_doll", "level": 15 }],
+      "note": "오버로드 중요도: 낮음\n이사벨 파트너\n시공중 버퍼\n이사벨보다 우선 육성"
+    },
+
+    "미하라 : 본딩 체인": {
+      "name": "미하라 : 본딩 체인",
+      "image": "/assets/characters/mihara_bonding_chain.png",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [7, 7, 7],
+        "maximum": [10, 10, 10]
+      },
+      "overload": { "priority": ["우월코드 4", "공격력 4", "장탄 1", "크리티컬 확률", "크리티컬 데미지"] },
+      "cubes": [
+        { "id": "relic_bear", "priority": 1 },
+        { "id": "tactical_bear", "priority": 2 }
+      ],
+      "collectibles": [{ "id": "sr_doll", "level": 15 }],
+      "note": "오버로드 중요도: 보통\n지속 데미지"
+    },
+
+    "리틀 머메이드(세이렌)": {
+      "name": "리틀 머메이드(세이렌)",
+      "image": "/assets/characters/little_mermaid.png",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [7, 7, 7],
+        "maximum": [10, 10, 10]
+      },
+      "overload": { "priority": ["우월코드 4", "공격력 4", "장탄 1", "크리티컬 데미지", "크리티컬 확률", "명중률"] },
+      "cubes": [
+        { "id": "relic_bear", "priority": 1 },
+        { "id": "tactical_bear", "priority": 2 }
+      ],
+      "collectibles": [{ "id": "sr_doll", "level": 15 }],
+      "note": "오버로드 중요도: 높음\n#버스트 쿨감\n세이렌"
+    },
+
+    "모리": {
+      "name": "모리",
+      "image": "/assets/characters/mori.png",
+      "skillLevels": {
+        "minimum": [1, 1, 1],
+        "recommended": [1, 1, 1],
+        "maximum": [1, 1, 1]
+      },
+      "overload": { "priority": [] },
+      "cubes": [
+        { "id": "relic_bear", "priority": 1 },
+        { "id": "tactical_bear", "priority": 2 }
+      ],
+      "collectibles": [],
+      "note": "오버로드 중요도: X"
+    },
+
+    "크러스트": {
+      "name": "크러스트",
+      "image": "/assets/characters/crust.png",
+      "skillLevels": {
+        "minimum": [1, 1, 1],
+        "recommended": [4, 4, 4],
+        "maximum": null
+      },
+      "overload": { "priority": ["우월코드", "공격력", "장탄"] },
+      "cubes": [{ "id": "relic_bear", "priority": 1 }],
+      "collectibles": [],
+      "note": "오버로드 중요도: 낮음"
+    },
+
+    "트리나": {
+      "name": "트리나",
+      "image": "/assets/characters/trina.png",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [7, 7, 7],
+        "maximum": [7, 10, 10]
+      },
+      "overload": { "priority": ["차지 속도", "장탄", "우월코드"] },
+      "cubes": [
+        { "id": "relic_bear", "priority": 1, "mode": "PVE" },
+        { "id": "relic_quantum", "priority": 2, "mode": "PVP" },
+        { "id": "relic_vigor", "priority": 3, "mode": "PVP" }
+      ],
+      "collectibles": [{ "id": "sr_doll", "level": 5 }],
+      "note": "오버로드 중요도: 낮음\nPVP 니케\n홍련 파트너\n"
+    },
+
+    "레이 (가칭)": {
+      "name": "레이 (가칭)",
+      "image": "/assets/characters/rei_temp.png",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [7, 7, 7],
+        "maximum": [10, 7, 10]
+      },
+      "overload": { "priority": ["장탄 2", "우월코드 4", "공격력 4", "명중률"] },
+      "cubes": [
+        { "id": "relic_bear", "priority": 1 },
+        { "id": "tactical_bear", "priority": 2 }
+      ],
+      "collectibles": [{ "id": "sr_doll", "level": 15 }],
+      "note": "오버로드 중요도: 보통\n시공중 버퍼\n풍레이"
+    },
+
+    "아스카 : WILLE": {
+      "name": "아스카 : WILLE",
+      "image": "/assets/characters/asuka_wille.png",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [7, 7, 7],
+        "maximum": [10, 10, 10]
+      },
+      "overload": { "priority": ["우월코드 4", "공격력 4", "최대 장탄 수"] },
+      "cubes": [
+        { "id": "relic_bear", "priority": 1 },
+        { "id": "tactical_bear", "priority": 2 }
+      ],
+      "collectibles": [{ "id": "sr_doll", "level": 15 }],
+      "note": "오버로드 중요도: 보통\n풍스카"
+    },
+
+    "앵커 : 이노센트 메이드": {
+      "name": "앵커 : 이노센트 메이드",
+      "image": "/assets/characters/anchor_innocent_maid.png",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [7, 7, 7],
+        "maximum": [10, 10, 10]
+      },
+      "overload": { "priority": ["우월코드", "장탄", "공격력", "차지 속도"] },
+      "cubes": [{ "id": "relic_bear", "priority": 1 }],
+      "collectibles": [{ "id": "sr_doll", "level": 15 }],
+      "note": "오버로드 중요도: 낮음\n시공중 버퍼\n분배 데미지"
+    },
+
+    "마스트 : 로망틱 메이드": {
+      "name": "마스트 : 로망틱 메이드",
+      "image": "/assets/characters/mast_romantic_maid.png",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [7, 7, 7],
+        "maximum": [10, 10, 10]
+      },
+      "overload": { "priority": ["우월코드", "장탄", "공격력", "명중률"] },
+      "cubes": [
+        { "id": "relic_bear", "priority": 1 },
+        { "id": "tactical_bear", "priority": 2 }
+      ],
+      "collectibles": [{ "id": "sr_doll", "level": 15 }],
+      "note": "오버로드 중요도: 낮음\n시공중 버퍼\n분배 데미지"
+    },
+
+    "마나": {
+      "name": "마나",
+      "image": "/assets/characters/mana.png",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [4, 7, 4],
+        "maximum": [7, 10, 7]
+      },
+      "overload": { "priority": ["우월코드 4", "공격력 4", "장탄", "크리티컬 데미지", "크리티컬 확률", "명중률"] },
+      "cubes": [
+        { "id": "relic_bear", "priority": 1 },
+        { "id": "tactical_bear", "priority": 2 }
+      ],
+      "collectibles": [{ "id": "sr_doll", "level": 5 }],
+      "note": "오버로드 중요도: 낮음"
+    },
+
+    "길로틴 윈터 슬레이어": {
+      "name": "길로틴 윈터 슬레이어",
+      "image": "/assets/characters/guillotine_winter_slayer.png",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [4, 7, 4],
+        "maximum": [9, 7, 9]
+      },
+      "overload": { "priority": ["우월코드 4", "공격력 4", "장탄", "명중률"] },
+      "cubes": [
+        { "id": "relic_bear", "priority": 1 },
+        { "id": "tactical_bear", "priority": 2 }
+      ],
+      "collectibles": [{ "id": "sr_doll", "level": 5 }],
+      "note": "오버로드 중요도: 낮음\n수냉 아군 시공중 버프, 우월코드 버프\n클로틴"
+    },
+
+    "메이든 : 아이스 로즈": {
+      "name": "메이든 : 아이스 로즈",
+      "image": "/assets/characters/maiden_ice_rose.png",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [7, 7, 7],
+        "maximum": [10, 10, 9]
+      },
+      "overload": { "priority": ["우월코드 4", "공격력 4", "장탄", "차지 속도"] },
+      "cubes": [
+        { "id": "relic_bear", "priority": 1 },
+        { "id": "tactical_bear", "priority": 2 }
+      ],
+      "collectibles": [{ "id": "sr_doll", "level": 15 }],
+      "note": "오버로드 중요도: 보통\n전격 아군 시공중 버프, 우월코드 버프\n클로틴"
+    },
+
+    "플로라": {
+      "name": "플로라",
+      "image": "/assets/characters/flora.png",
+      "skillLevels": {
+        "minimum": [1, 1, 1],
+        "recommended": [1, 1, 1],
+        "maximum": [1, 1, 1]
+      },
+      "overload": { "priority": [] },
+      "cubes": [
+        { "id": "relic_bear", "priority": 1 },
+        { "id": "tactical_bear", "priority": 2 }
+      ],
+      "collectibles": [],
+      "note": "오버로드 중요도: X\n방어력 무시 데미지"
+    },
+
+    "그레이브": {
+      "name": "그레이브",
+      "image": "/assets/characters/grave.png",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [7, 7, 7],
+        "maximum": [10, 10, 10]
+      },
+      "overload": { "priority": ["우월코드 4", "공격력 4", "크리티컬 데미지", "명중률"] },
+      "cubes": [
+        { "id": "relic_bear", "priority": 1 },
+        { "id": "relic_piercing", "priority": 2 }
+      ],
+      "collectibles": [{ "id": "sr_doll", "level": 15 }],
+      "note": "오버로드 중요도: 낮음\n관통 특화\n버스트 사용 시 본인 크리티컬 확률 100% + 무한 장탄"
+    },
+
+    "신데렐라": {
+      "name": "신데렐라",
+      "image": "/assets/characters/cinderella.png",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [7, 7, 7],
+        "maximum": [10, 10, 10]
+      },
+      "overload": { "priority": ["장탄 2", "우월코드 4", "공격력 4", "크리티컬 확률", "크리티컬 데미지"] },
+      "cubes": [
+        { "id": "tactical_bear", "priority": 1 },
+        { "id": "relic_bear", "priority": 2 }
+      ],
+      "collectibles": [{ "id": "sr_doll", "level": 15 }],
+      "note": "오버로드 중요도: 높음\nPVP 사용 시 렐릭 비고르 큐브 착용"
+    },
+
+    "라푼젤 : 퓨어 그레이스": {
+      "name": "라푼젤 : 퓨어 그레이스",
+      "image": "/assets/characters/rapunzel_pure_grace.png",
+      "skillLevels": {
+        "minimum": [1, 1, 1],
+        "recommended": [1, 1, 1],
+        "maximum": [1, 1, 1]
+      },
+      "overload": { "priority": [] },
+      "cubes": [
+        { "id": "relic_bear", "priority": 1 },
+        { "id": "relic_boost", "priority": 2 }
+      ],
+      "collectibles": [],
+      "note": "오버로드 중요도: X"
+    },
+
+    "루마니": {
+      "name": "루마니",
+      "image": "/assets/characters/rumani.png",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [7, 4, 4],
+        "maximum": [7, 4, 7]
+      },
+      "overload": { "priority": ["차지 속도"] },
+      "cubes": [
+        { "id": "relic_quantum", "priority": 1 },
+        { "id": "relic_bear", "priority": 2 }
+      ],
+      "collectibles": [{ "id": "sr_doll", "level": 5 }],
+      "note": "오버로드 중요도: 낮음\nPVP 전용 니케"
+    },
+
+    "팬텀": {
+      "name": "팬텀",
+      "image": "/assets/characters/phantom.png",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [7, 7, 7],
+        "maximum": [10, 10, 10]
+      },
+      "overload": { "priority": ["우월코드 4", "공격력 4", "장탄"] },
+      "cubes": [
+        { "id": "relic_bear", "priority": 1 },
+        { "id": "tactical_bear", "priority": 2 }
+      ],
+      "collectibles": [{ "id": "sr_doll", "level": 5 }],
+      "note": "오버로드 중요도: 낮음\n분배 데미지"
+    },
+
+    "퀀시 : 이스케이프 퀸": {
+      "name": "퀀시 : 이스케이프 퀸",
+      "image": "/assets/characters/quincy_escape_queen.png",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [7, 9, 9],
+        "maximum": [10, 10, 10]
+      },
+      "overload": { "priority": ["우월코드 4", "공격력 4", "명중률 1~2", "장탄"] },
+      "cubes": [
+        { "id": "relic_bear", "priority": 1 },
+        { "id": "tactical_bear", "priority": 2 }
+      ],
+      "collectibles": [{ "id": "sr_doll", "level": 15 }],
+      "note": "오버로드 중요도: 보통\n분배 데미지"
+    },
+
+    "루주": {
+      "name": "루주",
+      "image": "/assets/characters/rouge.png",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [7, 7, 7],
+        "maximum": [10, 10, 10]
+      },
+      "overload": { "priority": ["차지 속도", "장탄", "우월코드", "공격력"] },
+      "cubes": [
+        { "id": "relic_bear", "priority": 1 },
+        { "id": "relic_boost", "priority": 2 }
+      ],
+      "collectibles": [{ "id": "sr_doll", "level": 15 }],
+      "note": "오버로드 중요도: 낮음\n시공중 버퍼\n버스트 쿨감, 체력 증가"
+    },
+
+    "마리": {
+      "name": "마리",
+      "image": "/assets/characters/mari.png",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [7, 7, 7],
+        "maximum": [10, 10, 10]
+      },
+      "overload": { "priority": ["차지 속도", "장탄", "우월코드", "공격력"] },
+      "cubes": [
+        { "id": "relic_bear", "priority": 1 },
+        { "id": "relic_boost", "priority": 2 }
+      ],
+      "collectibles": [{ "id": "sr_doll", "level": 5 }],
+      "note": "오버로드 중요도: 낮음\n관통 특화"
+    },
+
+    "레이": {
+      "name": "레이",
+      "image": "/assets/characters/rei.png",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [7, 7, 7],
+        "maximum": [7, 10, 10]
+      },
+      "overload": { "priority": ["우월코드 4", "공격력 4", "장탄"] },
+      "cubes": [
+        { "id": "relic_bear", "priority": 1 },
+        { "id": "tactical_bear", "priority": 2 }
+      ],
+      "collectibles": [{ "id": "sr_doll", "level": 5 }],
+      "note": "오버로드 중요도: 보통\n작열 아군 시공중 버퍼, 보호막"
+    },
+
+    "아스카": {
+      "name": "아스카",
+      "image": "/assets/characters/asuka.png",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [7, 7, 7],
+        "maximum": [10, 10, 10]
+      },
+      "overload": { "priority": ["우월코드 4", "공격력 4", "장탄 2", "크리티컬 데미지", "크리티컬 확률"] },
+      "cubes": [
+        { "id": "relic_bear", "priority": 1 },
+        { "id": "tactical_bear", "priority": 2 }
+      ],
+      "collectibles": [{ "id": "sr_doll", "level": 15 }],
+      "note": "오버로드 중요도: 보통\n작열 아군 코어 데미지\n관통 특화"
+    },
+
+    "츠바이": {
+      "name": "츠바이",
+      "image": "/assets/characters/tsubai.png",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [7, 7, 7],
+        "maximum": [10, "7~10", 10]
+      },
+      "overload": { "priority": ["우월코드", "공격력", "장탄"] },
+      "cubes": [{ "id": "relic_bear", "priority": 1 }],
+      "collectibles": [{ "id": "tsubai_favorite_item", "level": 3 }],
+      "note": "오버로드 중요도: 낮음\n애장품 필수X\n뉴비 육성 X\n관통 데미지 버프"
+    },
+
+    "아인": {
+      "name": "아인",
+      "image": "/assets/characters/ein.png",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [7, 7, 7],
+        "maximum": [10, 10, 10]
+      },
+      "overload": { "priority": ["우월코드 4", "공격력 4", "장탄 2", "차지 속도", "크리티컬 확률", "크리티컬 데미지"] },
+      "cubes": [
+        { "id": "relic_bear", "priority": 1 },
+        { "id": "tactical_bear", "priority": 2 }
+      ],
+      "collectibles": [{ "id": "sr_doll", "level": 15 }],
+      "note": "오버로드 중요도: 보통\n방어력 무시 데미지"
+    },
+
+    "로산나 : 시크 오션": {
+      "name": "로산나 : 시크 오션",
+      "image": "/assets/characters/rosanna_chic_ocean.png",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [4, 4, 7],
+        "maximum": [4, 4, 10]
+      },
+      "overload": { "priority": ["우월코드", "공격력", "장탄"] },
+      "cubes": [
+        { "id": "relic_bear", "priority": 1 },
+        { "id": "tactical_bear", "priority": 2 }
+      ],
+      "collectibles": [{ "id": "sr_doll", "level": 5 }],
+      "note": "오버로드 중요도: 낮음\n지속, 파츠 데미지"
+    },
+
+    "사쿠라 : 블룸 인 서머": {
+      "name": "사쿠라 : 블룸 인 서머",
+      "image": "/assets/characters/sakura_bloom_in_summer.png",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [4, 7, 7],
+        "maximum": [10, 10, 10]
+      },
+      "overload": { "priority": ["우월코드 4", "공격력 4", "장탄"] },
+      "cubes": [
+        { "id": "relic_bear", "priority": 1 },
+        { "id": "tactical_bear", "priority": 2 }
+      ],
+      "collectibles": [{ "id": "sr_doll", "level": 5 }],
+      "note": "오버로드 중요도: 낮음\n지속 데미지\n파츠 파괴"
+    },
+
+    "클레이": {
+      "name": "클레이",
+      "image": "/assets/characters/clay.png",
+      "skillLevels": {
+        "minimum": [1, 1, 1],
+        "recommended": [1, 1, 1],
+        "maximum": [1, 1, 1]
+      },
+      "overload": { "priority": [] },
+      "cubes": [
+        { "id": "relic_bear", "priority": 1 },
+        { "id": "tactical_bear", "priority": 2 }
+      ],
+      "collectibles": [],
+      "note": "오버로드 중요도: X"
+    },
+
+    "앨리스 : 원더랜드 바니": {
+      "name": "앨리스 : 원더랜드 바니",
+      "image": "/assets/characters/alice_wonderland_bunny.png",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [4, 7, 4],
+        "maximum": [4, 10, 4]
+      },
+      "overload": { "priority": ["장탄", "우월코드", "공격력", "명중률"] },
+      "cubes": [
+        { "id": "relic_bear", "priority": 1 },
+        { "id": "tactical_bear", "priority": 2 }
+      ],
+      "collectibles": [{ "id": "sr_doll", "level": 5 }],
+      "note": "오버로드 중요도: 낮음\n1버스트 재진입"
+    },
+
+    "소다 : 트윙클링 바니": {
+      "name": "소다 : 트윙클링 바니",
+      "image": "/assets/characters/soda_twinkling_bunny.png",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [7, 7, 7],
+        "maximum": [7, 10, 10]
+      },
+      "overload": { "priority": ["우월코드 4", "공격력 4", "장탄", "명중률"] },
+      "cubes": [
+        { "id": "relic_bear", "priority": 1 },
+        { "id": "tactical_bear", "priority": 2 }
+      ],
+      "collectibles": [{ "id": "sr_doll", "level": 15 }],
+      "note": "오버로드 중요도: 보통\n풀버스트 시간 5초 증가"
+    },
+
+    "트로니": {
+      "name": "트로니",
+      "image": "/assets/characters/trony.png",
+      "skillLevels": {
+        "minimum": [1, 1, 1],
+        "recommended": [1, 1, 1],
+        "maximum": [1, 1, 1]
+      },
+      "overload": { "priority": [] },
+      "cubes": [
+        { "id": "relic_bear", "priority": 1 },
+        { "id": "tactical_bear", "priority": 2 }
+      ],
+      "collectibles": [],
+      "note": "오버로드 중요도: X"
+    },
+
+    "크라운": {
+      "name": "크라운",
+      "image": "/assets/characters/crown.png",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [7, 7, 7],
+        "maximum": [10, 10, 10]
+      },
+      "overload": { "priority": ["우월코드", "공격력", "장탄"] },
+      "cubes": [
+        { "id": "relic_bear", "priority": 1 },
+        { "id": "tactical_bear", "priority": 2 }
+      ],
+      "collectibles": [{ "id": "sr_doll", "level": 15 }],
+      "note": "오버로드 중요도: 낮음\n시공중 버퍼"
+    },
+
+    "킬로": {
+      "name": "킬로",
+      "image": "/assets/characters/kilo.png",
+      "skillLevels": {
+        "minimum": [1, 1, 1],
+        "recommended": [1, 1, 1],
+        "maximum": [1, 1, 1]
+      },
+      "overload": { "priority": [] },
+      "cubes": [
+        { "id": "relic_bear", "priority": 1 },
+        { "id": "tactical_bear", "priority": 2 }
+      ],
+      "collectibles": [],
+      "note": "오버로드 중요도: X"
+    },
+
+    "베이": {
+      "name": "베이",
+      "image": "/assets/characters/bay_favorite_item.png",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [7, 4, 7],
+        "maximum": [10, 7, 10]
+      },
+      "overload": { "priority": ["차지 속도", "우월코드", "공격력"] },
+      "cubes": [
+        { "id": "relic_tempering", "priority": 1 },
+        { "id": "relic_vigor", "priority": 2 }
+      ],
+      "collectibles": [{ "id": "bay_favorite_item", "level": 2 }],
+      "note": "오버로드 중요도: 낮음\nPVP 전용 니케\nPVP 사용 시 애장품 3렙"
+    },
+
+    "렘": {
+      "name": "렘",
+      "image": "/assets/characters/rem.png",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [7, 4, 7],
+        "maximum": [10, 4, 10]
+      },
+      "overload": { "priority": ["장탄", "우월코드", "공격력", "크리티컬 데미지"] },
+      "cubes": [
+        { "id": "relic_bear", "priority": 1 },
+        { "id": "tactical_bear", "priority": 2 }
+      ],
+      "collectibles": [],
+      "note": "오버로드 중요도: 낮음\n런처 아군 시공중 버퍼"
+    },
+
+    "에밀리아": {
+      "name": "에밀리아",
+      "image": "/assets/characters/emilia.png",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [7, 7, 7],
+        "maximum": [10, 10, 10]
+      },
+      "overload": { "priority": ["공격력 4", "장탄 2", "차지 속도 2", "우월코드 4"] },
+      "cubes": [
+        { "id": "relic_bear", "priority": 1 },
+        { "id": "relic_boost", "priority": 2 }
+      ],
+      "collectibles": [{ "id": "sr_doll", "level": 15 }],
+      "note": "오버로드 중요도: 낮음\nPVP 전용 니케"
+    },
+
+    "D : 킬러 와이프": {
+      "name": "D : 킬러 와이프",
+      "image": "/assets/characters/d_killer_wife.png",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [4, 7, 4],
+        "maximum": [7, 10, 7]
+      },
+      "overload": { "priority": ["차지 속도", "장탄", "우월코드", "공격력"] },
+      "cubes": [
+        { "id": "relic_bear", "priority": 1 },
+        { "id": "relic_boost", "priority": 2 }
+      ],
+      "collectibles": [{ "id": "sr_doll", "level": 5 }],
+      "note": "오버로드 중요도: 낮음\n시공중 버퍼\n관통 버프"
+    },
+
+    "일레그": {
+      "name": "일레그",
+      "image": "/assets/characters/elegg.png",
+      "skillLevels": {
+        "minimum": [1, 1, 1],
+        "recommended": [1, 1, 1],
+        "maximum": [1, 1, 1]
+      },
+      "overload": { "priority": [] },
+      "cubes": [
+        { "id": "relic_bear", "priority": 1 },
+        { "id": "tactical_bear", "priority": 2 }
+      ],
+      "collectibles": [],
+      "note": "오버로드 중요도: X"
+    },
+
+    "에이드": {
+      "name": "에이드",
+      "image": "/assets/characters/ade.png",
+      "skillLevels": {
+        "minimum": [1, 1, 1],
+        "recommended": [1, 1, 1],
+        "maximum": [1, 1, 1]
+      },
+      "overload": { "priority": [] },
+      "cubes": [
+        { "id": "relic_bear", "priority": 1 },
+        { "id": "tactical_bear", "priority": 2 }
+      ],
+      "collectibles": [],
+      "note": "오버로드 중요도: X"
+    },
+
+    "프리바티 : 언카인드 메이드": {
+      "name": "프리바티 : 언카인드 메이드",
+      "image": "/assets/characters/privaty_unkind_maid.png",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [7, 7, 7],
+        "maximum": [10, 10, 7]
+      },
+      "overload": { "priority": ["우월코드 4", "공격력 4", "장탄", "명중률", "크리티컬 확률"] },
+      "cubes": [
+        { "id": "relic_bear", "priority": 1 },
+        { "id": "tactical_bear", "priority": 2 }
+      ],
+      "collectibles": [{ "id": "sr_doll", "level": 5 }],
+      "note": "오버로드 중요도: 보통"
+    },
+
+    "목단": {
+      "name": "목단",
+      "image": "/assets/characters/mokdan_favorite_item.png",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [7, 7, 7],
+        "maximum": [10, 10, 10]
+      },
+      "overload": { "priority": ["우월코드 4", "공격력 4", "명중률", "방어력"] },
+      "cubes": [
+        { "id": "relic_bear", "priority": 1, "mode": "PVE" },
+        { "id": "relic_tempering", "priority": 1, "mode": "PVP" },
+        { "id": "relic_vigor", "priority": 2, "mode": "PVP" }
+      ],
+      "collectibles": [{ "id": "mokdan_favorite_item", "level": 3 }],
+      "note": "오버로드 중요도: 보통\n애장품 3렙 필수\n시공중 버퍼"
+    },
+
+    "레오나": {
+      "name": "레오나",
+      "image": "/assets/characters/leona.png",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [4, 7, 4],
+        "maximum": [7, 7, 7]
+      },
+      "overload": { "priority": ["우월코드", "공격력", "장탄", "명중률"] },
+      "cubes": [{ "id": "relic_bear", "priority": 1 }],
+      "collectibles": [{ "id": "sr_doll", "level": 5 }],
+      "note": "오버로드 중요도: 낮음"
+    },
+
+    "홍련 : 흑영": {
+      "name": "홍련 : 흑영",
+      "image": "/assets/characters/scarlet_black_shadow.png",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [7, 7, 7],
+        "maximum": [10, 7, 10]
+      },
+      "overload": { "priority": ["장탄 1", "우월코드 4", "공격력 4", "차지 속도 3"] },
+      "cubes": [
+        { "id": "relic_bear", "priority": 1 },
+        { "id": "relic_boost", "priority": 2 },
+        { "id": "tactical_bear", "priority": 3 }
+      ],
+      "collectibles": [{ "id": "sr_doll", "level": 15 }],
+      "note": "오버로드 중요도: 높음\n차지 속도 4% 이상\n장탄 옵션 52% 이상\n흑련"
+    },
+
+    "미카 : 스노우 버디": {
+      "name": "미카 : 스노우 버디",
+      "image": "/assets/characters/mica_snow_buddy.png",
+      "skillLevels": {
+        "minimum": [1, 1, 1],
+        "recommended": [1, 1, 1],
+        "maximum": [1, 1, 1]
+      },
+      "overload": { "priority": [] },
+      "cubes": [{ "id": "relic_bear", "priority": 1 }],
+      "collectibles": [],
+      "note": "오버로드 중요도: X"
+    },
+
+    "루드밀라 : 윈터 오너": {
+      "name": "루드밀라 : 윈터 오너",
+      "image": "/assets/characters/ludmilla_winter_owner.png",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [7, 7, 7],
+        "maximum": [10, 10, 10]
+      },
+      "overload": { "priority": ["장탄 2", "우월코드 4", "공격력 4", "크리티컬 데미지", "크리티컬 확률"] },
+      "cubes": [
+        { "id": "relic_bear", "priority": 1 },
+        { "id": "tactical_bear", "priority": 2 }
+      ],
+      "collectibles": [{ "id": "sr_doll", "level": 15 }],
+      "note": "오버로드 중요도: 보통\n토템 사용 시 버스트 1렙\n쿨루드"
+    },
+
+    "토브": {
+      "name": "토브",
+      "image": "/assets/characters/tove_favorite_item.png",
+      "skillLevels": {
+        "minimum": [7, 4, 4],
+        "recommended": [9, 7, 7],
+        "maximum": [10, 10, 10]
+      },
+      "overload": { "priority": ["장탄", "우월코드", "공격력"] },
+      "cubes": [
+        { "id": "relic_bear", "priority": 1 },
+        { "id": "tactical_bear", "priority": 2 }
+      ],
+      "collectibles": [{ "id": "tove_favorite_item", "level": 3 }],
+      "note": "오버로드 중요도: 보통\n애장품 3렙 필수"
+    },
+
+    "레드 후드": {
+      "name": "레드 후드",
+      "image": "/assets/characters/red_hood.png",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [7, 7, 7],
+        "maximum": [10, 10, 10]
+      },
+      "overload": { "priority": ["장탄 1", "우월코드 4", "공격력 4", "차지 속도", "차지 데미지"] },
+      "cubes": [
+        { "id": "relic_bear", "priority": 1 },
+        { "id": "relic_boost", "priority": 2 },
+        { "id": "tactical_bear", "priority": 3 }
+      ],
+      "collectibles": [{ "id": "sr_doll", "level": 15 }],
+      "note": "오버로드 중요도: 높음"
+    },
+
+    "스노우 화이트 : 이노센트 데이즈": {
+      "name": "스노우 화이트 : 이노센트 데이즈",
+      "image": "/assets/characters/snow_white_innocent_days.png",
+      "skillLevels": {
+        "minimum": [1, 1, 1],
+        "recommended": [1, 1, 1],
+        "maximum": [1, 1, 1]
+      },
+      "overload": { "priority": [] },
+      "cubes": [
+        { "id": "relic_bear", "priority": 1 },
+        { "id": "tactical_bear", "priority": 2 }
+      ],
+      "collectibles": [],
+      "note": "오버로드 중요도: X"
+    },
+
+    "키리": {
+      "name": "키리",
+      "image": "/assets/characters/kiri.png",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [7, 7, 7],
+        "maximum": [10, 10, 10]
+      },
+      "overload": { "priority": ["차지 속도"] },
+      "cubes": [
+        { "id": "relic_boost", "priority": 1 },
+        { "id": "relic_quantum", "priority": 2 }
+      ],
+      "collectibles": [{ "id": "sr_doll", "level": 15 }],
+      "note": "오버로드 중요도: 낮음\nPVP 전용 니케"
+    },
+
+    "티아": {
+      "name": "티아",
+      "image": "/assets/characters/tia.png",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [7, 4, 4],
+        "maximum": [10, 4, 4]
+      },
+      "overload": { "priority": ["우월코드", "장탄", "공격력", "차지 속도"] },
+      "cubes": [
+        { "id": "relic_bear", "priority": 1 },
+        { "id": "relic_boost", "priority": 2 }
+      ],
+      "collectibles": [{ "id": "sr_doll", "level": 5 }],
+      "note": "오버로드 중요도: 낮음\n1버스트 재진입\n나가 파트너"
+    },
+
+    "나가": {
+      "name": "나가",
+      "image": "/assets/characters/naga.png",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [7, 7, 7],
+        "maximum": [10, 10, 10]
+      },
+      "overload": { "priority": ["우월코드", "공격력", "최대 장탄 수"] },
+      "cubes": [
+        { "id": "relic_bear", "priority": 1 },
+        { "id": "tactical_bear", "priority": 2 }
+      ],
+      "collectibles": [{ "id": "sr_doll", "level": 5 }],
+      "note": "오버로드 중요도: 낮음\n시공중 버퍼\n코어 데미지 버프"
+    },
+
+    "마르차나": {
+      "name": "마르차나",
+      "image": "/assets/characters/marciana.png",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [4, 4, 4],
+        "maximum": [4, 4, 4]
+      },
+      "overload": { "priority": [] },
+      "cubes": [{ "id": "relic_bear", "priority": 1 }],
+      "collectibles": [],
+      "note": "오버로드 중요도: X\n장탄 옵션 X"
+    },
+
+    "2B": {
+      "name": "2B",
+      "image": "/assets/characters/2b.png",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [7, 7, 7],
+        "maximum": [10, 10, 10]
+      },
+      "overload": { "priority": ["우월코드 4", "공격력 4", "장탄", "크리티컬 확률", "크리티컬 데미지"] },
+      "cubes": [
+        { "id": "relic_bear", "priority": 1 },
+        { "id": "tactical_bear", "priority": 2 }
+      ],
+      "collectibles": [{ "id": "sr_doll", "level": 5 }],
+      "note": "오버로드 중요도: 낮음"
+    },
+
+    "A2": {
+      "name": "A2",
+      "image": "/assets/characters/a2.png",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [4, 4, 4],
+        "maximum": [4, 4, 4]
+      },
+      "overload": { "priority": ["우월코드", "장탄", "공격력", "차지 속도"] },
+      "cubes": [
+        { "id": "relic_bear", "priority": 1 },
+        { "id": "relic_boost", "priority": 2 }
+      ],
+      "collectibles": [{ "id": "sr_doll", "level": 5 }],
+      "note": "오버로드 중요도: 낮음"
+    },
+
+    "헬름 : 아쿠아마린": {
+      "name": "헬름 : 아쿠아마린",
+      "image": "/assets/characters/helm_aquamarine.png",
+      "skillLevels": {
+        "minimum": [1, 4, 1],
+        "recommended": [1, 7, 1],
+        "maximum": [1, 9, 1]
+      },
+      "overload": { "priority": ["우월코드", "공격력", "장탄"] },
+      "cubes": [{ "id": "relic_bear", "priority": 1 }],
+      "collectibles": [{ "id": "sr_doll", "level": 5 }],
+      "note": "오버로드 중요도: 낮음\n버스트 쿨감\n전격 상대 받댐증\n수헬름"
+    },
+
+    "아니스 : 스파클링 서머": {
+      "name": "아니스 : 스파클링 서머",
+      "image": "/assets/characters/anis_sparkling_summer.png",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [7, 7, 7],
+        "maximum": [10, 10, 9]
+      },
+      "overload": { "priority": ["우월코드 4", "공격력 4", "명중률", "크리티컬 확률", "크리티컬 데미지"] },
+      "cubes": [{ "id": "relic_bear", "priority": 1 }],
+      "collectibles": [{ "id": "sr_doll", "level": 15 }],
+      "note": "오버로드 중요도: 보통\n전격 아군 시공중, 재장전 속도 버프\n장탄 증가 옵션 X"
+    },
+
+    "마스트": {
+      "name": "마스트",
+      "image": "/assets/characters/mast.png",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [4, 4, 4],
+        "maximum": [4, 4, 4]
+      },
+      "overload": { "priority": [] },
+      "cubes": [
+        { "id": "relic_bear", "priority": 1 },
+        { "id": "tactical_bear", "priority": 2 }
+      ],
+      "collectibles": [],
+      "note": "오버로드 중요도: X"
+    },
+
+    "네로": {
+      "name": "네로",
+      "image": "/assets/characters/nero.png",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [7, 7, 7],
+        "maximum": [10, 10, 7]
+      },
+      "overload": { "priority": ["방어력", "공격력", "장탄"] },
+      "cubes": [
+        { "id": "relic_tempering", "priority": 1 },
+        { "id": "relic_vigor", "priority": 2 }
+      ],
+      "collectibles": [{ "id": "sr_doll", "level": 15 }],
+      "note": "오버로드 중요도: 낮음"
+    },
+
+    "네온 : 블루 오션": {
+      "name": "네온 : 블루 오션",
+      "image": "/assets/characters/neon_blue_ocean.png",
+      "skillLevels": {
+        "minimum": [1, 1, 1],
+        "recommended": [1, 1, 1],
+        "maximum": [1, 1, 1]
+      },
+      "overload": { "priority": [] },
+      "cubes": [
+        { "id": "relic_bear", "priority": 1 },
+        { "id": "tactical_bear", "priority": 2 }
+      ],
+      "collectibles": [],
+      "note": "오버로드 중요도: X"
+    },
+
+    "메어리 : 베이 갓데스": {
+      "name": "메어리 : 베이 갓데스",
+      "image": "/assets/characters/mary_bay_goddess.png",
+      "skillLevels": {
+        "minimum": [4, 1, 1],
+        "recommended": [4, 1, 1],
+        "maximum": [4, 1, 1]
+      },
+      "overload": { "priority": [] },
+      "cubes": [{ "id": "relic_bear", "priority": 1 }],
+      "collectibles": [],
+      "note": "오버로드 중요도: X"
+    },
+
+    "로산나": {
+      "name": "로산나",
+      "image": "/assets/characters/rosanna.png",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [7, 7, 7],
+        "maximum": [7, 10, 10]
+      },
+      "overload": { "priority": ["공격력 4", "크리티컬 확률 4", "우월코드 1", "크리티컬 데미지 3"] },
+      "cubes": [
+        { "id": "tactical_bear", "priority": 1 },
+        { "id": "relic_tempering", "priority": 2 }
+      ],
+      "collectibles": [{ "id": "sr_doll", "level": 15 }],
+      "note": "오버로드 중요도: 낮음\nPVP 전용 니케"
+    },
+
+    "누아르": {
+      "name": "누아르",
+      "image": "/assets/characters/noir.png",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [7, 5, 4],
+        "maximum": [10, 9, 4]
+      },
+      "overload": { "priority": ["우월코드", "공격력", "장탄", "명중률"] },
+      "cubes": [
+        { "id": "relic_bear", "priority": 1 },
+        { "id": "tactical_bear", "priority": 2 }
+      ],
+      "collectibles": [],
+      "note": "오버로드 중요도: 낮음\n블랑 파트너"
+    },
+
+    "블랑": {
+      "name": "블랑",
+      "image": "/assets/characters/blanc.png",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [4, 4, 7],
+        "maximum": [4, 7, 10]
+      },
+      "overload": { "priority": ["우월코드", "공격력", "장탄", "방어력(PVP)"] },
+      "cubes": [
+        { "id": "relic_bear", "priority": 1, "mode": "PVE" },
+        { "id": "tactical_bear", "priority": 2, "mode": "PVE" },
+        { "id": "relic_vigor", "priority": 1, "mode": "PVP" }
+      ],
+      "collectibles": [{ "id": "sr_doll", "level": 5 }],
+      "note": "오버로드 중요도: 낮음\n루주 OR 누아르 파트너"
+    },
+
+    "라이": {
+      "name": "라이",
+      "image": "/assets/characters/rai.png",
+      "skillLevels": {
+        "minimum": [1, 1, 1],
+        "recommended": [1, 1, 1],
+        "maximum": [1, 1, 1]
+      },
+      "overload": { "priority": [] },
+      "cubes": [
+        { "id": "relic_bear", "priority": 1 },
+        { "id": "tactical_bear", "priority": 2 }
+      ],
+      "collectibles": [],
+      "note": "오버로드 중요도: X"
+    },
+
+    "앨리스": {
+      "name": "앨리스",
+      "image": "/assets/characters/alice.png",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [7, 4, 7],
+        "maximum": [10, 4, 10]
+      },
+      "overload": { "priority": ["차지 속도 2", "우월코드 4", "공격력 4", "장탄 2"] },
+      "cubes": [
+        { "id": "relic_bear", "priority": 1 },
+        { "id": "relic_boost", "priority": 2 }
+      ],
+      "collectibles": [{ "id": "sr_doll", "level": 15 }],
+      "note": "오버로드 중요도: 높음\n차지 속도 8.4% 이상 필수\n차지 속도 버프\n관통 특화"
+    },
+
+    "D": {
+      "name": "D",
+      "image": "/assets/characters/d.png",
+      "skillLevels": {
+        "minimum": [1, 1, 1],
+        "recommended": [1, 1, 1],
+        "maximum": [1, 1, 1]
+      },
+      "overload": { "priority": [] },
+      "cubes": [
+        { "id": "relic_bear", "priority": 1 },
+        { "id": "tactical_bear", "priority": 2 }
+      ],
+      "collectibles": [],
+      "note": "오버로드 중요도: X"
+    },
+
+    "사쿠라": {
+      "name": "사쿠라",
+      "image": "/assets/characters/sakura.png",
+      "skillLevels": {
+        "minimum": [1, 1, 1],
+        "recommended": [1, 1, 1],
+        "maximum": [1, 1, 1]
+      },
+      "overload": { "priority": [] },
+      "cubes": [
+        { "id": "relic_bear", "priority": 1 },
+        { "id": "relic_boost", "priority": 2 }
+      ],
+      "collectibles": [],
+      "note": "오버로드 중요도: X"
+    },
+
+    "비스킷": {
+      "name": "비스킷",
+      "image": "/assets/characters/biscuit.png",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [4, 7, 4],
+        "maximum": [4, 10, 4]
+      },
+      "overload": { "priority": ["차지 속도", "공격력", "우월코드"] },
+      "cubes": [
+        { "id": "relic_tempering", "priority": 1 },
+        { "id": "relic_vigor", "priority": 2 }
+      ],
+      "collectibles": [{ "id": "sr_doll", "level": 5 }],
+      "note": "오버로드 중요도: 낮음\nPVP 전용 니케"
+    },
+
+    "파워": {
+      "name": "파워",
+      "image": "/assets/characters/power.png",
+      "skillLevels": {
+        "minimum": [1, 1, 1],
+        "recommended": [1, 1, 1],
+        "maximum": [1, 1, 1]
+      },
+      "overload": { "priority": [] },
+      "cubes": [{ "id": "relic_bear", "priority": 1 }],
+      "collectibles": [],
+      "note": "오버로드 중요도: X"
+    },
+
+    "마키마": {
+      "name": "마키마",
+      "image": "/assets/characters/makima.png",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [4, 4, 4],
+        "maximum": [4, 4, 4]
+      },
+      "overload": { "priority": ["우월코드", "공격력", "장탄", "명중률"] },
+      "cubes": [
+        { "id": "relic_bear", "priority": 1 },
+        { "id": "tactical_bear", "priority": 2 }
+      ],
+      "collectibles": [],
+      "note": "오버로드 중요도: 낮음\nPVP 전용 니케"
+    },
+
+    "소다": {
+      "name": "소다",
+      "image": "/assets/characters/soda.png",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [4, 4, 4],
+        "maximum": [4, 4, 4]
+      },
+      "overload": { "priority": ["공격력", "방어력"] },
+      "cubes": [
+        { "id": "relic_tempering", "priority": 1 },
+        { "id": "relic_vigor", "priority": 2 }
+      ],
+      "collectibles": [{ "id": "sr_doll", "level": 5 }],
+      "note": "오버로드 중요도: 낮음\nPVP 전용 니케"
+    },
+
+    "코코아": {
+      "name": "코코아",
+      "image": "/assets/characters/cocoa.png",
+      "skillLevels": {
+        "minimum": [1, 1, 1],
+        "recommended": [1, 1, 1],
+        "maximum": [1, 1, 1]
+      },
+      "overload": { "priority": [] },
+      "cubes": [
+        { "id": "relic_bear", "priority": 1 },
+        { "id": "relic_boost", "priority": 2 }
+      ],
+      "collectibles": [],
+      "note": "오버로드 중요도: X"
+    },
+
+    "바이퍼": {
+      "name": "바이퍼",
+      "image": "/assets/characters/viper_favorite_item.png",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [7, 4, 7],
+        "maximum": [10, 7, 10]
+      },
+      "overload": { "priority": ["우월코드 4", "공격력 4", "장탄", "크리티컬 확률", "크리티컬 데미지"] },
+      "cubes": [
+        { "id": "relic_bear", "priority": 1 },
+        { "id": "tactical_bear", "priority": 2 }
+      ],
+      "collectibles": [{ "id": "viper_favorite_item", "level": 2 }],
+      "note": "오버로드 중요도: 낮음\n애장품 필수X"
+    },
+
+    "자칼": {
+      "name": "자칼",
+      "image": "/assets/characters/jackal.png",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [7, 7, 4],
+        "maximum": [10, 10, 4]
+      },
+      "overload": { "priority": ["차지 속도"] },
+      "cubes": [
+        { "id": "relic_quantum", "priority": 1 },
+        { "id": "relic_boost", "priority": 2 }
+      ],
+      "collectibles": [{ "id": "sr_doll", "level": 5 }],
+      "note": "오버로드 중요도: 낮음\nPVP 전용 니케"
+    },
+
+    "모더니아": {
+      "name": "모더니아",
+      "image": "/assets/characters/modernia.png",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [7, 7, 7],
+        "maximum": [10, 10, 7]
+      },
+      "overload": { "priority": ["우월코드 4", "공격력 4", "장탄", "크리티컬 확률", "크리티컬 데미지"] },
+      "cubes": [
+        { "id": "relic_bear", "priority": 1 },
+        { "id": "tactical_bear", "priority": 2 }
+      ],
+      "collectibles": [{ "id": "sr_doll", "level": 5 }],
+      "note": "오버로드 중요도: 낮음"
+    },
+
+    "앤 : 미라클 페어리": {
+      "name": "앤 : 미라클 페어리",
+      "image": "/assets/characters/anne_miracle_fairy.png",
+      "skillLevels": {
+        "minimum": [1, 1, 1],
+        "recommended": [4, 4, 4],
+        "maximum": [4, 4, 7]
+      },
+      "overload": { "priority": ["차지 속도"] },
+      "cubes": [
+        { "id": "relic_quantum", "priority": 1 },
+        { "id": "relic_boost", "priority": 2 }
+      ],
+      "collectibles": [{ "id": "sr_doll", "level": 5 }],
+      "note": "오버로드 중요도: 낮음\nPVP 전용 니케"
+    },
+
+    "루피 : 윈터 쇼퍼": {
+      "name": "루피 : 윈터 쇼퍼",
+      "image": "/assets/characters/rupee_winter_shopper.png",
+      "skillLevels": {
+        "minimum": [1, 1, 1],
+        "recommended": [1, 1, 1],
+        "maximum": [1, 1, 1]
+      },
+      "overload": { "priority": [] },
+      "cubes": [
+        { "id": "relic_bear", "priority": 1 },
+        { "id": "tactical_bear", "priority": 2 }
+      ],
+      "collectibles": [],
+      "note": "오버로드 중요도: X"
+    },
+
+    "라플라스": {
+      "name": "라플라스",
+      "image": "/assets/characters/laplace.png",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [4, 7, 4],
+        "maximum": [4, 10, 7]
+      },
+      "overload": { "priority": ["우월코드", "공격력", "차지 속도", "크리티컬 확률"] },
+      "cubes": [
+        { "id": "relic_quantum", "priority": 1 },
+        { "id": "relic_bear", "priority": 2 }
+      ],
+      "collectibles": [{ "id": "laplace_favorite_item", "level": 3 }],
+      "note": "오버로드 중요도: 보통\n애장품 필수X"
+    },
+
+    "헬름": {
+      "name": "헬름",
+      "image": "/assets/characters/helm_favorite_item.png",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [7, 7, 7],
+        "maximum": [10, 10, 10]
+      },
+      "overload": { "priority": ["우월코드 4", "공격력 4", "차지 속도 4"] },
+      "cubes": [
+        { "id": "relic_bear", "priority": 1 },
+        { "id": "relic_boost", "priority": 2 }
+      ],
+      "collectibles": [{ "id": "helm_favorite_item", "level": 3 }],
+      "note": "오버로드 중요도: 보통\n애장품 2단계부터 사용\n장탄 옵션 X\n재장전 속도 100% 이상은 렐릭 베어 큐브 X"
+    },
+    "길티": {
+      "name": "길티",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [7, 7, 4],
+        "maximum": [10, 10, 4]
+      },
+      "overload": {
+        "priority": ["우월코드 4", "공격력 4"],
+        "subOptions": ["장탄", "명중률"]
+      },
+      "cubes": [{ "id": "relic_bear", "priority": 1 }],
+      "collectibles": [],
+      "note": "오버로드 중요도: 낮음"
+    },
+    "퀀시": {
+      "name": "퀀시",
+      "skillLevels": {
+        "minimum": [1, 1, 1],
+        "recommended": [1, 1, 1],
+        "maximum": [1, 1, 1]
+      },
+      "overload": { "priority": [] },
+      "cubes": [
+        { "id": "relic_bear", "priority": 1 },
+        { "id": "tactical_bear", "priority": 2 }
+      ],
+      "collectibles": [],
+      "note": "오버로드 중요도: X"
+    },
+    "신": {
+      "name": "신",
+      "skillLevels": {
+        "minimum": [1, 1, 1],
+        "recommended": [1, 1, 1],
+        "maximum": [1, 1, 1]
+      },
+      "overload": { "priority": [] },
+      "cubes": [
+        { "id": "relic_bear", "priority": 1 },
+        { "id": "tactical_bear", "priority": 2 }
+      ],
+      "collectibles": [],
+      "note": "오버로드 중요도: X"
+    },
+    "브레디": {
+      "name": "브레디",
+      "image": "/assets/characters/brady.png",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [7, 7, 7],
+        "maximum": ["10", 10, "10"]
+      },
+      "overload": {
+        "priority": ["공격력 4", "우월코드 4", "차지속도 2", "장탄 1"],
+        "subOptions": ["차지속도", "장탄"]
+      },
+      "cubes": [{ "id": "relic_bear", "priority": 1 }],
+      "collectibles": [{ "id": "sr_doll", "level": 15 }],
+      "note": "오버로드 중요도: 보통\n메스트와 메앵커와 함께 분배 대미지 딜러로 사용"
+    },
+
+    "엠마": {
+      "name": "엠마",
+      "image": "",
+      "skillLevels": {
+        "minimum": [1, 1, 1],
+        "recommended": [4, 4, 4],
+        "maximum": [4, 4, 4]
+      },
+      "overload": { "priority": [] },
+      "cubes": [],
+      "collectibles": [],
+      "note": ""
+    },
+
+    "프리바티": {
+      "name": "프리바티",
+      "image": "",
+      "skillLevels": {
+        "minimum": [7, 7, 4],
+        "recommended": [10, 10, 7],
+        "maximum": [10, 10, 10]
+      },
+      "overload": {
+        "priority": ["우월코드 4", "공격력  4"],
+        "subOptions": ["크리티컬 데미지", "크리티컬 확률"]
+      },
+      "cubes": [{ "id": "relic_bear", "priority": 1 }],
+      "collectibles": [],
+      "note": "오버로드 중요도: 보통\n애장품 3렙 필수"
+    },
+
+    "브리드": {
+      "name": "브리드",
+      "image": "",
+      "skillLevels": {
+        "minimum": [1, 1, 1],
+        "recommended": [1, 1, 1],
+        "maximum": [1, 1, 1]
+      },
+      "overload": { "priority": [] },
+      "cubes": [],
+      "collectibles": [],
+      "note": ""
+    },
+
+    "솔린": {
+      "name": "솔린",
+      "image": "",
+      "skillLevels": {
+        "minimum": [1, 1, 1],
+        "recommended": [1, 1, 1],
+        "maximum": [1, 1, 1]
+      },
+      "overload": { "priority": [] },
+      "cubes": [],
+      "collectibles": [],
+      "note": ""
+    },
+
+    "디젤": {
+      "name": "디젤",
+      "image": "",
+      "skillLevels": {
+        "minimum": [1, 1, 1],
+        "recommended": [1, 1, 1],
+        "maximum": [1, 1, 1]
+      },
+      "overload": { "priority": [] },
+      "cubes": [],
+      "collectibles": [],
+      "note": "오버로드 중요도: X\n애장품 필수X"
+    },
+
+    "베스티": {
+      "name": "베스티",
+      "image": "",
+      "skillLevels": {
+        "minimum": [1, 1, 1],
+        "recommended": [1, 1, 1],
+        "maximum": [1, 1, 1]
+      },
+      "overload": { "priority": [] },
+      "cubes": [],
+      "collectibles": [],
+      "note": ""
+    },
+
+    "은화": {
+      "name": "은화",
+      "image": "",
+      "skillLevels": {
+        "minimum": [1, 1, 1],
+        "recommended": [1, 1, 1],
+        "maximum": [1, 1, 1]
+      },
+      "overload": { "priority": [] },
+      "cubes": [],
+      "collectibles": [],
+      "note": ""
+    },
+
+    "길로틴": {
+      "name": "길로틴",
+      "image": "",
+      "skillLevels": {
+        "minimum": [1, 1, 1],
+        "recommended": [1, 1, 1],
+        "maximum": [1, 1, 1]
+      },
+      "overload": { "priority": [] },
+      "cubes": [],
+      "collectibles": [],
+      "note": ""
+    },
+
+    "메이든": {
+      "name": "메이든",
+      "image": "",
+      "skillLevels": {
+        "minimum": [1, 1, 1],
+        "recommended": [1, 1, 1],
+        "maximum": [1, 1, 1]
+      },
+      "overload": { "priority": [] },
+      "cubes": [],
+      "collectibles": [],
+      "note": ""
+    },
+
+    "메어리": {
+      "name": "메어리",
+      "image": "",
+      "skillLevels": {
+        "minimum": [1, 1, 1],
+        "recommended": [1, 1, 1],
+        "maximum": [1, 1, 1]
+      },
+      "overload": { "priority": [] },
+      "cubes": [],
+      "collectibles": [],
+      "note": ""
+    },
+
+    "밀크": {
+      "name": "밀크",
+      "image": "",
+      "skillLevels": {
+        "minimum": [1, 1, 1],
+        "recommended": [1, 1, 1],
+        "maximum": [1, 1, 1]
+      },
+      "overload": { "priority": [] },
+      "cubes": [],
+      "collectibles": [],
+      "note": "오버로드 중요도: X\n애장품 필수X"
+    },
+
+    "루드밀라": {
+      "name": "루드밀라",
+      "image": "",
+      "skillLevels": {
+        "minimum": [1, 1, 1],
+        "recommended": [1, 1, 1],
+        "maximum": [1, 1, 1]
+      },
+      "overload": { "priority": [] },
+      "cubes": [],
+      "collectibles": [],
+      "note": ""
+    },
+
+    "루피": {
+      "name": "루피",
+      "image": "",
+      "skillLevels": {
+        "minimum": [1, 1, 1],
+        "recommended": [1, 1, 1],
+        "maximum": [1, 1, 1]
+      },
+      "overload": { "priority": [] },
+      "cubes": [],
+      "collectibles": [],
+      "note": ""
+    },
+
+    "스노우 화이트": {
+      "name": "스노우 화이트",
+      "image": "",
+      "skillLevels": { "minimum": [4, 4, 10], "recommended": [7, 7, 10], "maximum": [10, 10, 10] },
+      "overload": {
+        "priority": ["우월코드", "공격력"],
+        "subOptions": ["크리티컬 확률"]
+      },
+      "cubes": [{ "id": "tactical_assault", "priority": 1 }],
+      "collectibles": [{ "id": "sr_doll", "level": 15 }],
+      "note": "오버로드 중요도: 보통\n관통 보스 킬러\n고인물만 사용"
+    },
+
+    "라푼젤": {
+      "name": "라푼젤",
+      "image": "",
+      "skillLevels": { "minimum": [4, 4, 4], "recommended": [4, 4, 4], "maximum": [7, 7, 7] },
+      "overload": {
+        "priority": ["차지 속도", "장탄"],
+        "subOptions": ["공격력"]
+      },
+      "cubes": [],
+      "collectibles": [{ "id": "sr_doll", "level": 5 }],
+      "note": ""
+    },
+
+    "홍련": {
+      "name": "홍련",
+      "image": "",
+      "skillLevels": { "minimum": [4, 4, 4], "recommended": [7, 7, 7], "maximum": [10, 10, 10] },
+      "overload": { "priority": ["우월코드", "공격력", "장탄"] },
+      "cubes": [
+        { "id": "relic_bear", "priority": 1 },
+        { "id": "tactical_bear", "priority": 2 }
+      ],
+      "collectibles": [{ "id": "sr_doll", "level": 15 }],
+      "note": "오버로드 중요도: 보통\n오버로드 옵션 장단이 두 개 이상이면 재장전을 거의 안하니 텍티컬 베어 큐브 사용"
+    },
+
+    "도로시": {
+      "name": "도로시",
+      "image": "",
+      "skillLevels": { "minimum": [7, 4, 4], "recommended": [7, 4, 4], "maximum": [7, 4, 7] },
+      "overload": { "priority": ["공격력", "명중률", "우월 코드"], "subOptions": ["크리티컬 확률"] },
+      "cubes": [{ "id": "relic_bear", "priority": 1 }],
+      "collectibles": [{ "id": "sr_doll", "level": 5 }],
+      "note": "오버로드 중요도: 낮음"
+    },
+
+    "시그널": {
+      "name": "시그널",
+      "image": "",
+      "skillLevels": { "minimum": [1, 1, 1], "recommended": [1, 1, 1], "maximum": [1, 1, 1] },
+      "overload": { "priority": [] },
+      "cubes": [],
+      "collectibles": [],
+      "note": ""
+    },
+
+    "폴리": {
+      "name": "폴리",
+      "image": "",
+      "skillLevels": { "minimum": [1, 1, 1], "recommended": [1, 1, 1], "maximum": [1, 1, 1] },
+      "overload": { "priority": [] },
+      "cubes": [],
+      "collectibles": [],
+      "note": "오버로드 중요도: X\n애장품 필수X"
+    },
+
+    "미란다": {
+      "name": "미란다",
+      "image": "",
+      "skillLevels": {
+        "minimum": [1, 4, 4],
+        "recommended": [1, 10, 7],
+        "maximum": [4, 10, 10]
+      },
+      "overload": { "priority": ["우월코드", "장탄", "공격력"] },
+      "cubes": [
+        { "id": "relic_bear", "priority": 1 },
+        { "id": "tactical_bear", "priority": 2 },
+        { "id": "tactical_boost", "priority": 3 }
+      ],
+      "collectibles": [],
+      "note": "오버로드 중요도: 보통\n애장품 3렙 필수"
+    },
+
+    "레이블": {
+      "name": "레이블",
+      "image": "",
+      "skillLevels": {
+        "minimum": [4, 4, 1],
+        "recommended": [7, 7, 1],
+        "maximum": [7, 7, 1]
+      },
+      "overload": { "priority": [] },
+      "cubes": [{ "id": "relic_bear", "priority": 1 }],
+      "collectibles": [],
+      "note": "오버로드 중요도: X\nPVP전용"
+    },
+
+    "맥스웰": {
+      "name": "맥스웰",
+      "image": "",
+      "skillLevels": {
+        "minimum": [4, 1, 4],
+        "recommended": [7, 4, 7],
+        "maximum": [10, 4, 10]
+      },
+      "overload": { "priority": ["우월코드", "장탄", "공격력", "차지 속도"] },
+      "cubes": [{ "id": "relic_bear", "priority": 1 }],
+      "collectibles": [],
+      "note": "오버로드 중요도: 낮음\n토템 운용 시 스킬2를 1레벨 유지(최대 10/1/1)"
+    },
+
+    "유니": {
+      "name": "유니",
+      "image": "",
+      "skillLevels": {
+        "minimum": [1, 1, 1],
+        "recommended": [1, 1, 1],
+        "maximum": [1, 1, 1]
+      },
+      "overload": { "priority": ["우월코드", "장탄", "공격력"] },
+      "cubes": [
+        { "id": "relic_bear", "priority": 1 },
+        { "id": "relic_boost", "priority": 2 }
+      ],
+      "collectibles": [],
+      "note": "오버로드 중요도: X\n사용X"
+    },
+
+    "리타": {
+      "name": "리타",
+      "image": "",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [7, 4, 7],
+        "maximum": [10, 4, 10]
+      },
+      "overload": { "priority": ["우월코드", "장탄", "공격력"] },
+      "cubes": [
+        { "id": "relic_bear", "priority": 1 },
+        { "id": "tactical_bear", "priority": 2 },
+        { "id": "tactical_boost", "priority": 3 }
+      ],
+      "collectibles": [],
+      "note": "\n오버로드 중요도: 낮음\n초보자 추천"
+    },
+
+    "센티": {
+      "name": "센티",
+      "image": "",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [4, 4, 4],
+        "maximum": [4, 4, 4]
+      },
+      "overload": { "priority": ["차지속도"] },
+      "cubes": [
+        { "id": "relic_boost", "priority": 1 },
+        { "id": "relic_quantum", "priority": 2 },
+        { "id": "relic_bear", "priority": 3 },
+        { "id": "tactical_boost", "priority": 4 }
+      ],
+      "collectibles": [],
+      "note": "오버로드 중요도: 낮음\n애장품 필수X"
+    },
+
+    "드레이크": {
+      "name": "드레이크",
+      "image": "",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [7, 4, 7],
+        "maximum": [10, 7, 10]
+      },
+      "overload": { "priority": ["우월코드", "공격력", "명중률", "장탄"] },
+      "cubes": [{ "id": "relic_bear", "priority": 1 }],
+      "collectibles": [],
+      "note": "오버로드 중요도: 보통\n#애장품 3렙 필수"
+    },
+
+    "크로우": {
+      "name": "크로우",
+      "image": "",
+      "skillLevels": {
+        "minimum": [1, 1, 1],
+        "recommended": [1, 1, 1],
+        "maximum": [1, 1, 1]
+      },
+      "overload": { "priority": [] },
+      "cubes": [],
+      "collectibles": [],
+      "note": ""
+    },
+
+    "페퍼": {
+      "name": "페퍼",
+      "image": "",
+      "skillLevels": {
+        "minimum": [1, 1, 1],
+        "recommended": [1, 1, 1],
+        "maximum": [1, 1, 1]
+      },
+      "overload": { "priority": [] },
+      "cubes": [],
+      "collectibles": [],
+      "note": ""
+    },
+
+    "애드미": {
+      "name": "애드미",
+      "image": "",
+      "skillLevels": {
+        "minimum": [1, 1, 1],
+        "recommended": [1, 1, 1],
+        "maximum": [1, 1, 1]
+      },
+      "overload": { "priority": [] },
+      "cubes": [],
+      "collectibles": [],
+      "note": ""
+    },
+
+    "에피넬": {
+      "name": "에피넬",
+      "image": "",
+      "skillLevels": {
+        "minimum": [1, 1, 1],
+        "recommended": [1, 1, 1],
+        "maximum": [1, 1, 1]
+      },
+      "overload": { "priority": [] },
+      "cubes": [],
+      "collectibles": [],
+      "note": ""
+    },
+
+    "슈가": {
+      "name": "슈가",
+      "image": "",
+      "skillLevels": {
+        "minimum": [1, 1, 1],
+        "recommended": [1, 1, 1],
+        "maximum": [1, 1, 1]
+      },
+      "overload": { "priority": [] },
+      "cubes": [],
+      "collectibles": [],
+      "note": ""
+    },
+
+    "엑시아": {
+      "name": "엑시아",
+      "image": "",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [7, 7, 7],
+        "maximum": [9, 9, 9]
+      },
+      "overload": { "priority": ["우월코드", "공격력", "차지속도"] },
+      "cubes": [
+        { "id": "relic_bear", "priority": 1 },
+        { "id": "relic_boost", "priority": 2 }
+      ],
+      "collectibles": [],
+      "note": "오버로드 중요도: 낮음\n애장품 필수X\n토템 운용 시 우선순위: 2스킬 > 1스킬 > 버스트 (최대 9/9/1)"
+    },
+
+    "프림": {
+      "name": "프림",
+      "image": "",
+      "skillLevels": {
+        "minimum": [1, 1, 1],
+        "recommended": [1, 1, 1],
+        "maximum": [1, 1, 1]
+      },
+      "overload": { "priority": [] },
+      "cubes": [],
+      "collectibles": [],
+      "note": "오버로드 중요도: X\n애장품 필수X"
+    },
+
+    "율하": {
+      "name": "율하",
+      "image": "",
+      "skillLevels": {
+        "minimum": [1, 1, 1],
+        "recommended": [1, 1, 1],
+        "maximum": [1, 1, 1]
+      },
+      "overload": { "priority": [] },
+      "cubes": [],
+      "collectibles": [],
+      "note": ""
+    },
+
+    "율리아": {
+      "name": "율리아",
+      "image": "",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [7, 7, 7],
+        "maximum": [10, 10, 10]
+      },
+      "overload": { "priority": ["우월코드", "공격력", "크리티컬 확률"] },
+      "cubes": [
+        { "id": "relic_bear", "priority": 1 },
+        { "id": "tactical_bear", "priority": 2 }
+      ],
+      "collectibles": [],
+      "note": "오버로드 중요도: 보통\n애장품 필수X"
+    },
+
+    "안": {
+      "name": "안",
+      "image": "",
+      "skillLevels": {
+        "minimum": [1, 1, 1],
+        "recommended": [1, 1, 1],
+        "maximum": [1, 1, 1]
+      },
+      "overload": { "priority": [] },
+      "cubes": [],
+      "collectibles": [],
+      "note": ""
+    },
+
+    "도라": {
+      "name": "도라",
+      "image": "",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [4, 4, 4],
+        "maximum": [4, 4, 4]
+      },
+      "overload": { "priority": ["우월코드", "장탄", "공격력"], "subOptions": ["차지 속도"] },
+      "cubes": [{ "id": "relic_bear", "priority": 1 }],
+      "collectibles": [{ "id": "r_doll", "level": 15 }],
+      "note": "오버로드 중요도: 낮음\n전격 솔로레이드"
+    },
+
+    "노벨": {
+      "name": "노벨",
+      "image": "",
+      "skillLevels": {
+        "minimum": [1, 1, 1],
+        "recommended": [1, 1, 1],
+        "maximum": [1, 1, 1]
+      },
+      "overload": { "priority": [] },
+      "cubes": [],
+      "collectibles": [],
+      "note": ""
+    },
+
+    "폴크방": {
+      "name": "폴크방",
+      "image": "",
+      "skillLevels": {
+        "minimum": [1, 1, 1],
+        "recommended": [1, 1, 1],
+        "maximum": [1, 1, 1]
+      },
+      "overload": { "priority": [] },
+      "cubes": [],
+      "collectibles": [],
+      "note": ""
+    },
+
+    "아리아": {
+      "name": "아리아",
+      "image": "",
+      "skillLevels": {
+        "minimum": [1, 1, 1],
+        "recommended": [1, 1, 1],
+        "maximum": [1, 1, 1]
+      },
+      "overload": { "priority": [] },
+      "cubes": [],
+      "collectibles": [],
+      "note": ""
+    },
+
+    "노이즈": {
+      "name": "노이즈",
+      "image": "",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [7, 7, 7],
+        "maximum": [10, 10, 10]
+      },
+      "overload": { "priority": ["차지속도"] },
+      "cubes": [
+        { "id": "relic_bear", "priority": 1 },
+        { "id": "relic_quantum", "priority": 2 },
+        { "id": "relic_boost", "priority": 3 },
+        { "id": "relic_tempering", "priority": 4 }
+      ],
+      "collectibles": [],
+      "note": "오버로드 중요도: 낮음\n"
+    },
+
+    "볼륨": {
+      "name": "볼륨",
+      "image": "",
+      "skillLevels": {
+        "minimum": [1, 4, 4],
+        "recommended": [1, 4, 4],
+        "maximum": [1, 4, 4]
+      },
+      "overload": { "priority": ["우월코드", "장탄", "공격력"] },
+      "cubes": [
+        { "id": "relic_bear", "priority": 1 },
+        { "id": "tactical_bear", "priority": 2 },
+        { "id": "tactical_boost", "priority": 3 }
+      ],
+      "collectibles": [],
+      "note": "오버로드 중요도: 낮음\n버쿨감"
+    },
+
+    "이사벨": {
+      "name": "이사벨",
+      "image": "",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [7, 7, 7],
+        "maximum": [10, 10, 10]
+      },
+      "overload": { "priority": ["우월코드", "장탄", "공격력"] },
+      "cubes": [{ "id": "relic_bear", "priority": 1 }],
+      "collectibles": [],
+      "note": "오버로드 중요도: 보통\n아르카나 필수"
+    },
+
+    "하란": {
+      "name": "하란",
+      "image": "",
+      "skillLevels": {
+        "minimum": [1, 1, 1],
+        "recommended": [1, 1, 1],
+        "maximum": [1, 1, 1]
+      },
+      "overload": { "priority": ["우월코드", "장탄", "공격력", "차지속도"] },
+      "cubes": [
+        { "id": "relic_bear", "priority": 1 },
+        { "id": "relic_boost", "priority": 2 },
+        { "id": "relic_quantum", "priority": 3 }
+      ],
+      "collectibles": [],
+      "note": "오버로드 중요도: X"
+    },
+
+    "노아": {
+      "name": "노아",
+      "image": "",
+      "skillLevels": {
+        "minimum": [4, 4, 4],
+        "recommended": [4, 4, 4],
+        "maximum": [4, 4, 4]
+      },
+      "overload": { "priority": ["차지속도"] },
+      "cubes": [
+        { "id": "relic_quantum", "priority": 1 },
+        { "id": "relic_boost", "priority": 2 },
+        { "id": "relic_bear", "priority": 3 },
+        { "id": "tactical_boost", "priority": 4 }
+      ],
+      "collectibles": [],
+      "note": "오버로드 중요도: 낮음"
+    },
+
+    "니힐리스타": {
+      "name": "니힐리스타",
+      "image": "",
+      "skillLevels": {
+        "minimum": [1, 1, 1],
+        "recommended": [1, 1, 1],
+        "maximum": [1, 1, 1]
+      },
+      "overload": { "priority": ["우월코드", "장탄", "공격력", "차지속도"] },
+      "cubes": [
+        { "id": "relic_bear", "priority": 1 },
+        { "id": "relic_boost", "priority": 2 }
+      ],
+      "collectibles": [],
+      "note": "오버로드 중요도: X"
+    }
+  },
+
+  "cubeMaster": {
+    "relic_bear": {
+      "name": "렐릭 베어",
+      "image": "/assets/cubes/relic_bear.png"
+    },
+    "relic_boost": {
+      "name": "렐릭 부스트",
+      "image": "/assets/cubes/relic_boost.png"
+    },
+    "relic_crash": {
+      "name": "렐릭 크래시",
+      "image": "/assets/cubes/relic_crash.png"
+    },
+    "relic_tempering": {
+      "name": "렐릭 템퍼링",
+      "image": "/assets/cubes/relic_tempering.png"
+    },
+    "relic_vigor": {
+      "name": "렐릭 비고르",
+      "image": "/assets/cubes/relic_vigor.png"
+    },
+    "relic_piercing": {
+      "name": "렐릭 피어싱",
+      "image": "/assets/cubes/relic_piercing.png"
+    },
+    "relic_quantum": {
+      "name": "렐릭 퀀텀",
+      "image": "/assets/cubes/relic_quantum.png"
+    },
+    "tactical_bear": {
+      "name": "택티컬 베어",
+      "image": "/assets/cubes/tactical_bear.png"
+    },
+    "relic_assault": {
+      "name": "렐릭 어썰트",
+      "image": "/assets/cubes/relic_assault.png"
+    },
+    "relic_endure": {
+      "name": "렐릭 인듀어",
+      "image": "/assets/cubes/relic_endure.png"
+    },
+    "relic_healing": {
+      "name": "렐릭 힐링",
+      "image": "/assets/cubes/relic_healing.png"
+    },
+    "tactical_assault": {
+      "name": "택티컬 어썰트",
+      "image": "/assets/cubes/tactical_assault.png"
+    },
+    "tactical_boost": {
+      "name": "택티컬 부스트",
+      "image": "/assets/cubes/tactical_boost.png"
+    }
+  },
+
+  "collectibleMaster": {
+    "r_doll": {
+      "name": "R",
+      "image": "/assets/collectibles/r_doll.png"
+    },
+    "sr_doll": {
+      "name": "SR",
+      "image": "/assets/collectibles/sr_doll.png"
+    },
+    "tsubai_favorite_item": {
+      "name": "츠바이 애장품",
+      "image": "/assets/collectibles/tsubai_favorite_item.png"
+    },
+    "bay_favorite_item": {
+      "name": "베이 애장품",
+      "image": "/assets/collectibles/bay_favorite_item.png"
+    },
+    "mokdan_favorite_item": {
+      "name": "목단 애장품",
+      "image": "/assets/collectibles/mokdan_favorite_item.png"
+    },
+    "tove_favorite_item": {
+      "name": "토브 애장품",
+      "image": "/assets/collectibles/tove_favorite_item.png"
+    },
+    "viper_favorite_item": {
+      "name": "바이퍼 애장품",
+      "image": "/assets/collectibles/viper_favorite_item.png"
+    },
+    "laplace_favorite_item": {
+      "name": "라플라스 애장품",
+      "image": "/assets/collectibles/laplace_favorite_item.png"
+    },
+    "helm_favorite_item": {
+      "name": "헬름 애장품",
+      "image": "/assets/collectibles/helm_favorite_item.png"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "extends": "./tsconfig.app.json",
+  "exclude": [],
+  "compilerOptions": {
+    "lib": [
+      "ES2021.String"
+    ],
+    "types": ["node", "jsdom"]
+  }
+}
