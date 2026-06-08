@@ -11,9 +11,9 @@
           <Yapping />
         </div>
 
-        <div class="toolListDiv">
+        <!-- <div class="toolListDiv">
           <ChangeQualityMode />
-        </div>
+        </div> -->
 
         <div class="toolListDiv">
           <ResetCoordinates />

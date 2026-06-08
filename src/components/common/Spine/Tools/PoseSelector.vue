@@ -28,19 +28,19 @@ const market = useMarket()
 const poses = [
   {
     value: 'aim',
-    label: 'Aim',
+    label: '사격',
     component: AimOutlined,
     top: '3px'
   },
   {
     value: 'cover',
-    label: 'Cover',
+    label: '엄폐',
     component: ManageProtection,
     top: '5px'
   },
   {
     value: 'fb',
-    label: 'Full Body',
+    label: '스탠딩',
     component: AccessibilityTwotone,
     top: '3px'
   }
