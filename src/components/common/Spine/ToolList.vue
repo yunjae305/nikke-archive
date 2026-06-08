@@ -8,16 +8,16 @@
 
         <div class="toolListDiv">
           <PoseSelector />
-          <Yapping />
+          <!-- <Yapping /> -->
         </div>
 
         <!-- <div class="toolListDiv">
           <ChangeQualityMode />
         </div> -->
 
-        <div class="toolListDiv">
+        <!-- <div class="toolListDiv">
           <ResetCoordinates />
-        </div>
+        </div> -->
 
         <div class="toolListDiv">
           <HideUI />
@@ -36,14 +36,14 @@
           <Export />
         </div> -->
 
-        <div style="display: flex;" class="toolListDiv">
+        <!-- <div style="display: flex;" class="toolListDiv">
           <Screenshot />
           <ChangeScreenshotSize />
-        </div>
+        </div> -->
 
-        <div class="toolListDiv">
+        <!-- <div class="toolListDiv">
           <CustomLoader />
-        </div>
+        </div> -->
 
       </n-card>
     </n-scrollbar>

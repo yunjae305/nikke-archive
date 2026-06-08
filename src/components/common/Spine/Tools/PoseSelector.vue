@@ -4,7 +4,11 @@
     v-model:value="market.live2d.current_pose"
   >
     <span v-for="pose in poses" :key="pose.value">
-      <n-radio :key="pose.value" :value="pose.value">
+      <n-radio
+        :key="pose.value"
+        :value="pose.value"
+        :disabled="isFbOnly && pose.value !== 'fb'"
+      >
         <n-icon
           :component="pose.component"
           :size="18"
@@ -18,12 +22,19 @@
 </template>
 
 <script setup lang="ts">
+import { computed } from 'vue'
 import { useMarket } from '@/stores/market'
 import { AimOutlined } from '@vicons/antd'
 import { AccessibilityTwotone } from '@vicons/material'
 import ManageProtection from '@vicons/carbon/ManageProtection'
+import l2dData from '@/utils/json/l2d.json'
 
 const market = useMarket()
+
+const isFbOnly = computed(() => {
+  const entry = (l2dData as any[]).find(e => e.id === market.live2d.current_id)
+  return entry?.fbOnly === true
+})
 
 const poses = [
   {

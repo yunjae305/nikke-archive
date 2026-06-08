@@ -71,6 +71,9 @@ export const useLive2dStore = defineStore('live2d', () => {
   const change_current_spine = (newSpine: live2d_interface) => {
     current_id.value = newSpine.id
     f.value = newSpine.f ? newSpine.f : ''
+    if (newSpine.fbOnly) {
+      current_pose.value = 'fb'
+    }
   }
 
   const triggerResetPlacement = () => {
