@@ -1,5 +1,5 @@
 <template>
-  <n-button :disabled="market.live2d.isExportingAnimation" ghost type="primary" round @click="capture()">
+  <n-button :disabled="market.live2d.isExportingAnimation || isSafari" ghost type="primary" round @click="capture()">
     Export
   </n-button>
 
@@ -17,6 +17,7 @@
 import { useMarket } from '@/stores/market'
 
 const market = useMarket()
+const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent)
 
 const capture = () => {
   market.live2d.exportAnimation()

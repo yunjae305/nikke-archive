@@ -29,6 +29,8 @@ let canvas: HTMLCanvasElement | null = null
 let spineCanvas: any = null
 let currentLoadId = 0 // Track active load requests
 const market = useMarket()
+
+const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent)
 const STORY_GEN_LOW_POWER_DATASET_KEY = 'storyGenLowPower'
 const STORY_GEN_LOW_POWER_FRAME_MS = 1000 / 30
 
@@ -441,7 +443,7 @@ const spineLoader = () => {
         premultipliedAlpha: true,
         mipmaps: market.live2d.current_pose === 'fb' ? true : false,
         debug: false,
-        preserveDrawingBuffer: true,
+        preserveDrawingBuffer: !isSafari,
         viewport: spineViewport,
         defaultMix: SPINE_DEFAULT_MIX,
         success: (player: any) => {
