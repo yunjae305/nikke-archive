@@ -83,22 +83,26 @@
   {
     "name": "아니스 : 스타",
     "id": "c017",
-    "company": "테트라"
+    "company": "테트라",
+    "code": "전격"
   },
   {
     "name": "아니스 : 스타 스타라이트",
     "id": "c017_01",
-    "company": "테트라"
+    "company": "테트라",
+    "code": "전격"
   },
   {
     "name": "아니스 : 스타 T.T. STAR",
     "id": "c017_02",
-    "company": "테트라"
+    "company": "테트라",
+    "code": "전격"
   },
   {
     "name": "네온 : 비전 아이",
     "id": "c018",
-    "company": "엘리시온"
+    "company": "엘리시온",
+    "code": "전격"
   },
   {
     "name": "델타",
@@ -1896,34 +1900,40 @@
   {
     "name": "민트",
     "id": "c600",
-    "company": "테트라"
+    "company": "테트라",
+    "code": "철갑"
   },
   {
     "name": "민트 프레시 민트",
     "id": "c600_01",
-    "company": "테트라"
+    "company": "테트라",
+    "code": "철갑"
   },
   {
     "name": "민트",
     "id": "c600_02",
     "fbOnly": true,
-    "company": "테트라"
+    "company": "테트라",
+    "code": "철갑"
   },
   {
     "name": "프리카",
     "id": "c601",
-    "company": "테트라"
+    "company": "테트라",
+    "code": "수냉"
   },
   {
     "name": "프리카 쿨 파프리카",
     "id": "c601_01",
-    "company": "테트라"
+    "company": "테트라",
+    "code": "수냉"
   },
   {
     "name": "프리카",
     "id": "c601_02",
     "fbOnly": true,
-    "company": "테트라"
+    "company": "테트라",
+    "code": "수냉"
   },
   {
     "name": "메카미 시프티",
@@ -1932,7 +1942,8 @@
   {
     "name": "백학",
     "id": "c620",
-    "company": "미실리스"
+    "company": "미실리스",
+    "code": "수냉"
   },
   {
     "name": "마키마",
