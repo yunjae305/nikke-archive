@@ -23,18 +23,18 @@
           <HideUI />
         </div>
 
-        <div class="toolListDiv">
+        <!-- <div class="toolListDiv">
           <BackgroundColor />
-        </div>
+        </div> -->
 
-        <div class="toolListDiv">
+        <!-- <div class="toolListDiv">
           <BackgroundImage />
           <BackgroundImagePack />
-        </div>
+        </div> -->
 
-        <div class="toolListDiv">
+        <!-- <div class="toolListDiv">
           <Export />
-        </div>
+        </div> -->
 
         <div style="display: flex;" class="toolListDiv">
           <Screenshot />
