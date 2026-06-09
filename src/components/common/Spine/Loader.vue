@@ -6,7 +6,7 @@
   >
     <img
       v-if="market.live2d.imageOnly"
-      :src="'/images/scene/' + market.live2d.current_id + '.webp'"
+      :src="'/images/favorites/' + market.live2d.current_id + '.webp'"
       class="image-only"
     />
   </div>
