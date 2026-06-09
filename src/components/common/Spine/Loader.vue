@@ -3,7 +3,13 @@
     id="player-container"
     :class="checkMobile() ? 'mobile' : 'computer'"
     :style="{ visibility: market.live2d.isVisible ? 'visible' : 'hidden', opacity: market.live2d.isVisible ? 1 : 0 }"
-  ></div>
+  >
+    <img
+      v-if="market.live2d.imageOnly"
+      :src="'/images/scene/' + market.live2d.current_id + '.png'"
+      class="image-only"
+    />
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -82,7 +88,11 @@ const applyStoryGenLowPowerThrottle = (player: any) => {
 
 onMounted(() => {
   market.load.beginLoad()
-  spineLoader()
+  if (market.live2d.imageOnly) {
+    successfullyLoaded()
+  } else {
+    spineLoader()
+  }
   window.addEventListener('resize', handleResize)
   document.addEventListener('mousedown', onMouseDown)
   document.addEventListener('touchstart', onTouchStart, { passive: false })
@@ -858,6 +868,10 @@ const loadSpineAfterWatcher = () => {
       spineCanvas = null
     }
     market.load.beginLoad()
+    if (market.live2d.imageOnly) {
+      successfullyLoaded()
+      return
+    }
     spineLoader()
     applyDefaultStyle2Canvas()
   }
@@ -972,7 +986,7 @@ const YAP_TRACK = 'talk_start'
 
 const checkIfAssetCanYap = () => {
   let yappable = false
-  if (market.live2d.current_pose === 'fb') {
+  if (market.live2d.current_pose === 'fb' && spineCanvas) {
     const animations = spineCanvas.animationState.data.skeletonData.animations
     animations.forEach((a: {name: string}) => {
       if (a.name === YAP_TRACK) {
@@ -1025,8 +1039,7 @@ watch(() => market.live2d.isYapping, (value) => {
 
 <style scoped lang="less">
 #player-container {
-   //height: calc(100vh - 100px);
-  overflow:hidden;
+  overflow: hidden;
 }
 .mobile {
   height: -webkit-fill-available;
@@ -1036,5 +1049,12 @@ watch(() => market.live2d.isYapping, (value) => {
 .computer {
   height: 100vh;
   margin-top: -100px
+}
+
+.image-only {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
 }
 </style>

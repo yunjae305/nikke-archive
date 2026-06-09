@@ -11,6 +11,7 @@ export const useLive2dStore = defineStore('live2d', () => {
   const current_id = ref('c010') as Ref<string>
   const current_pose = ref('fb') as Ref<'fb' | 'aim' | 'cover' | 'temp'>
   const f = ref('')
+  const imageOnly = ref(false) as Ref<boolean>
   const resetPlacement = ref(0)
   const isExportingAnimation = ref(false)
   const exportAnimationTimestamp = ref(0)
@@ -71,6 +72,7 @@ export const useLive2dStore = defineStore('live2d', () => {
   const change_current_spine = (newSpine: live2d_interface) => {
     current_id.value = newSpine.id
     f.value = newSpine.f ? newSpine.f : ''
+    imageOnly.value = newSpine.imageOnly ?? false
     if (newSpine.fbOnly) {
       current_pose.value = 'fb'
     }
@@ -413,6 +415,7 @@ export const useLive2dStore = defineStore('live2d', () => {
     applyBackground,
     clearActiveBackground,
     clearBackgroundImages,
-    f
+    f,
+    imageOnly
   }
 })

@@ -7,6 +7,7 @@ export interface live2d_interface {
   tl?: string
   f?: string
   fbOnly?: boolean
+  imageOnly?: boolean
   code?: L2dCode
   company?: L2dCompany
   collection?: boolean

@@ -3530,6 +3530,7 @@
     "name": "애장품: 프리바티",
     "id": "favorite_c170",
     "fbOnly": true,
+    "imageOnly": true,
     "collection": true
   },
   {
