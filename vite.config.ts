@@ -6,7 +6,7 @@ import vueJsx from '@vitejs/plugin-vue-jsx'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/nikke-archive/',
+  base: process.env.GITHUB_ACTIONS ? '/nikke-archive/' : '/',
   plugins: [vue(), vueJsx()],
   define: {
     __VUE_OPTIONS_API__: true,
