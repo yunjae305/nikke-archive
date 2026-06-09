@@ -3469,67 +3469,80 @@
   {
     "name": "애장품: 폴리",
     "id": "favorite_c030",
-    "fbOnly": true
+    "fbOnly": true,
+    "collection": true
   },
   {
     "name": "애장품: 미란다",
     "id": "favorite_c032",
-    "fbOnly": true
+    "fbOnly": true,
+    "collection": true
   },
   {
     "name": "애장품: 디젤",
     "id": "favorite_c072",
-    "fbOnly": true
+    "fbOnly": true,
+    "collection": true
   },
   {
     "name": "애장품: 라플라스",
     "id": "favorite_c100",
-    "fbOnly": true
+    "fbOnly": true,
+    "collection": true
   },
   {
     "name": "애장품: 드레이크",
     "id": "favorite_c101",
-    "fbOnly": true
+    "fbOnly": true,
+    "collection": true
   },
   {
     "name": "애장품: 바이퍼",
     "id": "favorite_c112",
-    "fbOnly": true
+    "fbOnly": true,
+    "collection": true
   },
   {
     "name": "애장품: 밀크",
     "id": "favorite_c141",
-    "fbOnly": true
+    "fbOnly": true,
+    "collection": true
   },
   {
     "name": "애장품: 프림",
     "id": "favorite_c142",
-    "fbOnly": true
+    "fbOnly": true,
+    "collection": true
   },
   {
     "name": "애장품: 율리아",
     "id": "favorite_c150",
-    "fbOnly": true
+    "fbOnly": true,
+    "collection": true
   },
   {
     "name": "애장품: 토브",
     "id": "favorite_c192",
-    "fbOnly": true
+    "fbOnly": true,
+    "collection": true
   },
   {
     "name": "애장품: 엑시아",
     "id": "favorite_c210",
-    "fbOnly": true
+    "fbOnly": true,
+    "collection": true
   },
   {
     "name": "애장품: 헬름",
     "id": "favorite_c352",
-    "fbOnly": true
+    "fbOnly": true,
+    "collection": true
   },
   {
     "name": "애장품: 베이",
     "id": "favorite_c550",
-    "fbOnly": true
+    "fbOnly": true,
+    "collection": true
   },
   {
     "name": "Story 00-01",
