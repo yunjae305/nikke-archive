@@ -3527,6 +3527,12 @@
     "collection": true
   },
   {
+    "name": "애장품: 프리바티",
+    "id": "favorite_c170",
+    "fbOnly": true,
+    "collection": true
+  },
+  {
     "name": "애장품: 엑시아",
     "id": "favorite_c210",
     "fbOnly": true,
