@@ -241,7 +241,7 @@ watch(nameFilter, (val) => { searchText.value = val })
 const growthData = growthJson as unknown as CharacterGrowthData
 
 const characterList = computed(() => {
-  const baseArray: live2d_interface[] = l2d
+  const baseArray: live2d_interface[] = l2d as unknown as live2d_interface[]
   return baseArray
     .slice()
     .filter((c: live2d_interface) => !c.name.toUpperCase().startsWith('HIDDEN'))

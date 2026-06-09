@@ -61,7 +61,7 @@ export const useLive2dStore = defineStore('live2d', () => {
   const backgroundImageMap = ref(new Map<string, File>()) as Ref<Map<string, File>>
 
   const filter = () => {
-    const base_array: live2d_interface[] = l2d
+    const base_array: live2d_interface[] = l2d as unknown as live2d_interface[]
     filtered_l2d_Array.value = base_array.sort(
       (a: live2d_interface, b: live2d_interface) => {
         return a.name.trim().localeCompare(b.name.trim())
