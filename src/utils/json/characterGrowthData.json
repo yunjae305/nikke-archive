@@ -592,8 +592,8 @@
       "note": "오버로드 중요도: 보통\n지속 데미지"
     },
 
-    "리틀 머메이드(세이렌)": {
-      "name": "리틀 머메이드(세이렌)",
+    "리틀 머메이드": {
+      "name": "리틀 머메이드",
       "image": "/assets/characters/little_mermaid.png",
       "skillLevels": {
         "minimum": [4, 4, 4],
