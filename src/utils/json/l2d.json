@@ -3552,6 +3552,20 @@
     "collection": true
   },
   {
+    "name": "애장품: 목단",
+    "id": "favorite_c281",
+    "fbOnly": true,
+    "imageOnly": true,
+    "collection": true
+  },
+  {
+    "name": "애장품: 츠바이",
+    "id": "favorite_c390",
+    "fbOnly": true,
+    "imageOnly": true,
+    "collection": true
+  },
+  {
     "name": "Story 00-01",
     "id": "story0001",
     "fbOnly": true
