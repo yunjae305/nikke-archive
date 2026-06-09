@@ -3552,6 +3552,13 @@
     "collection": true
   },
   {
+    "name": "애장품: 센티",
+    "id": "favorite_c080",
+    "fbOnly": true,
+    "imageOnly": true,
+    "collection": true
+  },
+  {
     "name": "애장품: 목단",
     "id": "favorite_c281",
     "fbOnly": true,

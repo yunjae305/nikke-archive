@@ -69,7 +69,7 @@
           @click="changeSpine(character)"
         >
           <template #prefix>
-            <img :src="getSiIcon(character.id)" class="si_img" loading="lazy" :onerror="`this.onerror=null; this.src='${fallbackSiIcon()}'`"/>
+            <img :src="getSiIcon(character)" class="si_img" loading="lazy" :onerror="`this.onerror=null; this.src='${fallbackSiIcon()}'`"/>
           </template>
 
           <n-h5>{{ character.name }}</n-h5>
@@ -130,8 +130,12 @@ onMounted(() => {
   }
 })
 
-const getSiIcon = (id: string) => `${spriteBasePath}si_${id}_00_s.png`
-const fallbackSiIcon = () => getSiIcon('c9999')
+const favoritesBasePath = `${import.meta.env.BASE_URL}images/favorites/`
+const getSiIcon = (character: live2d_interface) => {
+  if (character.imageOnly) return `${favoritesBasePath}${character.id}.webp`
+  return `${spriteBasePath}si_${character.id}_00_s.png`
+}
+const fallbackSiIcon = () => `${spriteBasePath}si_c9999_00_s.png`
 const checkMobile = () => market.globalParams.isMobile ? 'mobile' : 'computer'
 const changeSpine = (character: live2d_interface) => market.live2d.change_current_spine(character)
 </script>
