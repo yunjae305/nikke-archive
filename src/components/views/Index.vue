@@ -350,11 +350,12 @@ onMounted(() => {
     market.load.endLoad();
     (document.querySelector('.n-back-top') as HTMLElement).click()
   }, 10)
-  const bg = market.globalParams.isMobile ? bgiMobile : bgi
-  document.body.style.backgroundImage =
-    'linear-gradient(rgba(33, 37, 41, 0.28), rgba(33, 37, 41, 0.28)), url("' + bg + '")'
   if (market.globalParams.isMobile) {
+    document.body.style.backgroundImage = 'url("' + bgiMobile + '")'
     document.body.style.backgroundPosition = 'center top'
+  } else {
+    document.body.style.backgroundImage =
+      'linear-gradient(rgba(33, 37, 41, 0.28), rgba(33, 37, 41, 0.28)), url("' + bgi + '")'
   }
   window.addEventListener('keydown', handleEsc)
 })
