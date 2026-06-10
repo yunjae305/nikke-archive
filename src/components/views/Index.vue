@@ -64,7 +64,7 @@
                 <span class="modal-char-name">{{ selectedCharacter!.name }}</span>
                 <img
                   v-if="selectedCharacter!.code"
-                  :src="`/assets/codes/${selectedCharacter!.code}.png`"
+                  :src="`/assets/codes/${codeFileName(selectedCharacter!.code!)}.png`"
                   class="modal-code-icon"
                   :alt="selectedCharacter!.code"
                 />
@@ -362,6 +362,15 @@ onUnmounted(() => {
 
 const getSiIcon = (id: string) => `${spriteBasePath}si_${id}_00_s.png`
 const fallbackSiIcon = () => getSiIcon('c9999')
+
+const CODE_FILE_MAP: Record<string, string> = {
+  '작열': 'fire',
+  '수냉': 'water',
+  '철갑': 'iron',
+  '전격': 'electronic',
+  '풍압': 'wind',
+}
+const codeFileName = (code: string) => CODE_FILE_MAP[code] ?? code
 
 const onCompositionStart = () => { composingRef = true }
 
