@@ -19,22 +19,7 @@
           />
         </template>
 
-        <n-tabs type="line" animated size="large">
-          <n-tab-pane name="Character" tab="Character">
-            <CharacterList />
-          </n-tab-pane>
-
-          <n-tab-pane name="options" tab="Options" class="options">
-            <div class="l2d-options-tab">
-              <n-switch v-model:value="showHeaderBool" class="center-switch">
-                <template #checked> The header is currently visible </template>
-
-                <template #unchecked> The header is currently hidden </template>
-              </n-switch>
-            </div>
-          </n-tab-pane>
-
-        </n-tabs>
+        <CharacterList />
 
         <template #footer>
           <!-- footer content -->
@@ -47,7 +32,7 @@
 <script setup lang="ts">
 import { CloseOutlined } from '@vicons/antd'
 import magnifyingGlass from '@/assets/magnifying-glass.png'
-import { ref, watch } from 'vue'
+import { ref } from 'vue'
 import CharacterList from './CharacterList.vue'
 import { useMarket } from '@/stores/market'
 import PoseSelector from '@/components/common/Spine/Tools/PoseSelector.vue'
@@ -56,7 +41,6 @@ import BackgroundColor from './Tools/BackgroundColor.vue'
 const market = useMarket()
 
 const isCogModalVisible = ref(false)
-const showHeaderBool = ref(false)
 
 const showCogModal = () => {
   isCogModalVisible.value = true
@@ -65,19 +49,6 @@ const showCogModal = () => {
 const hideCogModal = () => {
   isCogModalVisible.value = false
 }
-
-watch(showHeaderBool, () => {
-  switch (showHeaderBool.value) {
-    case true:
-      market.globalParams.showMobileHeader()
-      break
-    case false:
-      market.globalParams.hideMobileHeader()
-      break
-    default:
-      break
-  }
-})
 </script>
 
 <style lang="less" scoped>
@@ -109,34 +80,4 @@ watch(showHeaderBool, () => {
   height: 80vh;
 }
 
-.n-tab-pane {
-  height: calc(80vh - 200px);
-  overflow: auto;
-
-  .l2d-options-tab {
-    width: 100%;
-    text-align: center;
-  }
-
-  .poseSelector {
-    text-align: center;
-
-    span {
-      text-align: left;
-    }
-  }
-
-  &.options > * {
-    padding-bottom: 10px;
-
-    &:not(:nth-child(1)) {
-      border-top: 1px solid @grey-color;
-      padding: 10px 0;
-    }
-  }
-}
-
-.n-tabs {
-  height: 100%;
-}
 </style>
