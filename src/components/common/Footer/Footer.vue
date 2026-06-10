@@ -48,14 +48,9 @@
 }
 
 @media (max-width: 900px) {
-  .n-card {
-    position: static;
-    margin-top: 16px;
-  }
-
   .footer-inner {
     flex-direction: column;
-    gap: 6px;
+    gap: 4px;
     text-align: center;
     font-size: 12px;
   }

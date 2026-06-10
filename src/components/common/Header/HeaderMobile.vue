@@ -7,7 +7,7 @@
 
     <div class="drawer-counter">
       <n-icon
-        :component="MenuOpenRound"
+        :component="MenuRound"
         @click="openDrawer()"
         class="iconDiv"
         :size="48"
@@ -50,7 +50,7 @@ import logo from '@/assets/NIKKE_ARCHIVE_LOGO.png'
 
 import type { route2DisplayInterface } from '@/components/common/Header/routes2Display'
 
-import { MenuOpenRound } from '@vicons/material'
+import { MenuRound } from '@vicons/material'
 
 const showDrawer = ref(false)
 
