@@ -1,8 +1,7 @@
 <template>
   <div>
-    <n-icon
-      :size="50"
-      :component="Cog"
+    <img
+      :src="magnifyingGlass"
       id="mobileCogL2d"
       @click="showCogModal()"
     />
@@ -46,8 +45,8 @@
 </template>
 
 <script setup lang="ts">
-import { Cog } from '@vicons/fa'
 import { CloseOutlined } from '@vicons/antd'
+import magnifyingGlass from '@/assets/magnifying-glass.png'
 import { ref, watch } from 'vue'
 import CharacterList from './CharacterList.vue'
 import { useMarket } from '@/stores/market'
@@ -89,6 +88,10 @@ watch(showHeaderBool, () => {
   top: 16px;
   left: 16px;
   z-index: 50;
+  width: 44px;
+  height: 44px;
+  filter: invert(1);
+  cursor: pointer;
 }
 
 #mobilePoseSelector {
