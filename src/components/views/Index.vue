@@ -60,7 +60,15 @@
                 loading="lazy"
                 :onerror="`this.onerror=null; this.src='${fallbackSiIcon()}'`"
               />
-              <span class="modal-char-name">{{ selectedCharacter!.name }}</span>
+              <div class="modal-char-name-row">
+                <span class="modal-char-name">{{ selectedCharacter!.name }}</span>
+                <img
+                  v-if="selectedCharacter!.code"
+                  :src="`/assets/codes/${selectedCharacter!.code}.png`"
+                  class="modal-code-icon"
+                  :alt="selectedCharacter!.code"
+                />
+              </div>
             </div>
 
             <template v-if="selectedGrowthData">
@@ -678,11 +686,24 @@ const openCharacter = (character: live2d_interface) => {
   flex-shrink: 0;
 }
 
+.modal-char-name-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
 .modal-char-name {
   font-size: 20px;
   font-weight: 600;
   color: white;
   word-break: keep-all;
+}
+
+.modal-code-icon {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  flex-shrink: 0;
 }
 
 .cube-entry {
