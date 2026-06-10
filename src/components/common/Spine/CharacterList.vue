@@ -262,17 +262,20 @@ const changeSpine = (character: live2d_interface) => market.live2d.change_curren
 }
 
 .mobile {
+  position: relative;
+
   .filter-panel {
-    position: static;
-    width: 100%;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    width: auto;
+    z-index: 20;
     box-sizing: border-box;
-    margin-top: 4px;
-    left: auto;
-    top: auto;
   }
 
   .n-scrollbar {
-    max-height: calc(80vh - 260px);
+    max-height: calc(80vh - 160px);
   }
 
   .n-list-item,
