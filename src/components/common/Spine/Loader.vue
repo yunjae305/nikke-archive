@@ -48,6 +48,10 @@ const spineViewport = {
   padBottom: '0%'
 }
 
+const getMobileViewport = () => market.globalParams.isMobile
+  ? { padLeft: '8%', padRight: '8%', padTop: '5%', padBottom: '12%' }
+  : spineViewport
+
 const isStoryGenLowPowerEnabled = () => {
   if (typeof document === 'undefined') return false
 
@@ -409,6 +413,12 @@ const spineLoader = () => {
 
     if (request.status !== 200) {
       console.error('Failed to load skel file:', request.statusText)
+      if (market.live2d.current_pose !== 'fb') {
+        market.live2d.current_pose = 'fb'
+        market.message.getMessage().warning('이 캐릭터는 해당 포즈가 없습니다', market.message.short_message)
+      } else {
+        wrongfullyLoaded()
+      }
       return
     }
 
@@ -454,7 +464,7 @@ const spineLoader = () => {
         mipmaps: market.live2d.current_pose === 'fb' ? true : false,
         debug: false,
         preserveDrawingBuffer: !isSafari,
-        viewport: spineViewport,
+        viewport: getMobileViewport(),
         defaultMix: SPINE_DEFAULT_MIX,
         success: (player: any) => {
 
@@ -533,7 +543,7 @@ const customSpineLoader = () => {
     mipmaps: market.live2d.current_pose === 'fb' ? true : false,
     debug: false,
     preserveDrawingBuffer: true,
-    viewport: spineViewport,
+    viewport: getMobileViewport(),
     defaultMix: SPINE_DEFAULT_MIX,
     success: (player: any) => {
       spinePlayer = player
