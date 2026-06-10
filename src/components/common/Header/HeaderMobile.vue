@@ -21,7 +21,9 @@
       :auto-focus="false"
     >
       <n-drawer-content>
-        <template #header> 내비게이션 </template>
+        <template #header>
+          <RouterLink to="/" class="drawer-home" @click="closeDrawer()">홈</RouterLink>
+        </template>
 
         <template #footer>
           <div>
@@ -91,5 +93,11 @@ const closeDrawer = () => {
       justify-content: flex-end;
     }
   }
+}
+
+.drawer-home {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
 }
 </style>

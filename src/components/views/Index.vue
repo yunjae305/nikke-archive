@@ -444,6 +444,10 @@ const openCharacter = (character: live2d_interface) => {
   width: min(440px, calc(100vw - 32px));
   position: relative;
   z-index: 5;
+
+  @media (max-width: 900px) {
+    width: min(440px, 85vw);
+  }
 }
 
 .searchBox :deep(.n-input) {
