@@ -485,7 +485,10 @@
         "recommended": [7, 9, 9],
         "maximum": [10, 10, 10]
       },
-      "overload": { "priority": ["장탄 2", "우월코드", "공격력"] },
+      "overload": {
+        "priority": ["장탄 2", "우월코드", "공격력"],
+        "subOptions": []
+      },
       "cubes": [{ "id": "relic_bear", "priority": 1 }],
       "collectibles": [{ "id": "sr_doll", "level": 5 }],
       "note": "오버로드 중요도: 낮음\n방어력 무시 버프\n시공중 버퍼\n택화 혹은 택스티 없이 사용 불가"
@@ -541,7 +544,10 @@
         "recommended": [7, 7, 7],
         "maximum": [10, 10, 10]
       },
-      "overload": { "priority": ["우월코드 4", "공격력 4", "장탄 1", "크리티컬 데미지", "크리티컬 확률"] },
+      "overload": {
+        "priority": ["우월코드 4", "공격력 4", "장탄 1"],
+        "subOptions": ["크리티컬 데미지", "크리티컬 확률"]
+      },
       "cubes": [{ "id": "relic_bear", "priority": 1 }],
       "collectibles": [{ "id": "sr_doll", "level": 15 }],
       "note": "오버로드 중요도: 보통\n파츠 데미지\n자체 크리티컬 확률 75%로 크리티컬 데미지 효율 높음"
@@ -569,7 +575,10 @@
         "recommended": [7, 7, 7],
         "maximum": [10, 10, 10]
       },
-      "overload": { "priority": ["장탄", "차지 속도", "우월코드", "공격력"] },
+      "overload": {
+        "priority": ["우월코드 4"],
+        "subOptions": ["장탄"]
+      },
       "cubes": [{ "id": "relic_bear", "priority": 1 }],
       "collectibles": [{ "id": "sr_doll", "level": 15 }],
       "note": "오버로드 중요도: 낮음\n이사벨 파트너\n시공중 버퍼\n이사벨보다 우선 육성"
@@ -583,7 +592,10 @@
         "recommended": [7, 7, 7],
         "maximum": [10, 10, 10]
       },
-      "overload": { "priority": ["우월코드 4", "공격력 4", "장탄 1", "크리티컬 확률", "크리티컬 데미지"] },
+      "overload": {
+        "priority": ["우월코드 4", "공격력 4", "장탄 1"],
+        "subOptions": ["크리티컬 데미지"]
+      },
       "cubes": [
         { "id": "relic_bear", "priority": 1 },
         { "id": "tactical_bear", "priority": 2 }
@@ -600,7 +612,10 @@
         "recommended": [7, 7, 7],
         "maximum": [10, 10, 10]
       },
-      "overload": { "priority": ["우월코드 4", "공격력 4", "장탄 1", "크리티컬 데미지", "크리티컬 확률", "명중률"] },
+      "overload": {
+        "priority": ["우월코드 4", "공격력 4", "장탄 1"],
+        "subOptions": ["크리티컬 데미지", "명중률"]
+      },
       "cubes": [
         { "id": "relic_bear", "priority": 1 },
         { "id": "tactical_bear", "priority": 2 }
@@ -634,7 +649,7 @@
         "recommended": [4, 4, 4],
         "maximum": null
       },
-      "overload": { "priority": ["우월코드", "공격력", "장탄"] },
+      "overload": { "priority": [] },
       "cubes": [{ "id": "relic_bear", "priority": 1 }],
       "collectibles": [],
       "note": "오버로드 중요도: 낮음"
