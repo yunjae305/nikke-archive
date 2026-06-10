@@ -229,6 +229,7 @@ import { computed, onMounted, onBeforeMount, onUnmounted, ref, watch } from 'vue
 import { useRouter } from 'vue-router'
 import { useMarket } from '@/stores/market'
 import bgi from '@/assets/STAR ANIS.png'
+import bgiMobile from '@/assets/STARANIS_M.png'
 import l2d from '@/utils/json/l2d.json'
 import growthJson from '@/utils/json/characterGrowthData.json'
 import type { live2d_interface } from '@/utils/interfaces/live2d'
@@ -349,14 +350,19 @@ onMounted(() => {
     market.load.endLoad();
     (document.querySelector('.n-back-top') as HTMLElement).click()
   }, 10)
+  const bg = market.globalParams.isMobile ? bgiMobile : bgi
   document.body.style.backgroundImage =
-    'linear-gradient(rgba(33, 37, 41, 0.28), rgba(33, 37, 41, 0.28)), url("' + bgi + '")'
+    'linear-gradient(rgba(33, 37, 41, 0.28), rgba(33, 37, 41, 0.28)), url("' + bg + '")'
+  if (market.globalParams.isMobile) {
+    document.body.style.backgroundPosition = 'center top'
+  }
   window.addEventListener('keydown', handleEsc)
 })
 
 onUnmounted(() => {
   document.body.classList.remove('poli-bg')
   document.body.style.backgroundImage = 'none'
+  document.body.style.backgroundPosition = ''
   window.removeEventListener('keydown', handleEsc)
 })
 

@@ -3,8 +3,8 @@
     <div class="footer-inner">
       <span>Nikke-Archive | 2022 - {{ new Date().getFullYear() }} | By Boora (kyj31590039@gmail.com)</span>
       <div class="footer-notice">
-        <span>절대적인 수치는 아니며 보유한 캐릭터풀, 재화 등에 따라 적당히 타협하시길 권장 드립니다.</span>
-        <span>표기가 잘못 되어 있거나 최신화가 안되어 있을 경우 요청해 주시면 반영 하도록 하겠습니다.</span>
+        <span>수치는 절대적이지 않으며 상황에 따라 타협하시길 권장 드립니다.</span>
+        <span>오류·미반영 사항은 이메일로 문의해 주세요.</span>
       </div>
     </div>
   </n-card>
