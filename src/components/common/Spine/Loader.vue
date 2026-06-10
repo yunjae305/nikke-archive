@@ -118,6 +118,7 @@ onUnmounted(() => {
   document.removeEventListener('mousemove', onMouseMove)
   document.removeEventListener('touchmove', onTouchMove)
   document.removeEventListener('wheel', onWheel)
+  market.globalParams.showMobileHeader()
 })
 
 const handleResize = () => {
