@@ -20,26 +20,25 @@
       :trap-focus="false"
       :auto-focus="false"
     >
-      <n-drawer-content>
-        <template #header>
-          <RouterLink to="/" class="drawer-home" @click="closeDrawer()">홈</RouterLink>
-        </template>
-
+      <n-drawer-content :native-scrollbar="false">
         <template #footer>
           <div>
             <n-p>NIKKE Archive</n-p>
           </div>
         </template>
 
-        <RouterLink
-          v-for="route in props.routes.filter((rout) => rout.mobile === true)"
-          :to="route.path"
-          class="redirect"
-          :key="'route' + route.path"
-          @click="closeDrawer()"
-        >
-          {{ route.text }}<br />
-        </RouterLink>
+        <div class="drawer-nav">
+          <RouterLink to="/" class="redirect" @click="closeDrawer()">홈</RouterLink>
+          <RouterLink
+            v-for="route in props.routes.filter((rout) => rout.mobile === true)"
+            :to="route.path"
+            class="redirect"
+            :key="'route' + route.path"
+            @click="closeDrawer()"
+          >
+            {{ route.text }}
+          </RouterLink>
+        </div>
       </n-drawer-content>
     </n-drawer>
   </div>
@@ -95,9 +94,10 @@ const closeDrawer = () => {
   }
 }
 
-.drawer-home {
-  color: white;
-  text-decoration: none;
-  font-size: 16px;
+.drawer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  padding: 8px 0;
 }
 </style>
