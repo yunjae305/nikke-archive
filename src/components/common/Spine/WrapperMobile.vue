@@ -40,20 +40,6 @@
             </div>
           </n-tab-pane>
 
-          <n-tab-pane name="tools" tab="Tools" class="options">
-            <div>
-              <BackgroundColor />
-            </div>
-            <div>
-              <Screenshot />
-              It is extremely recommended for mobile users to pause the frame
-              they want to screenshot before pressing the button, as the pop up
-              make it really hard to get the frame you want.<br />
-              Custom screenshot size and better resolution will happen in the
-              future, for now the screenshot will have the width and height of
-              your screen.
-            </div>
-          </n-tab-pane>
         </n-tabs>
 
         <template #footer>
@@ -72,7 +58,6 @@ import CharacterList from './CharacterList.vue'
 import { useMarket } from '@/stores/market'
 import PoseSelector from '@/components/common/Spine/Tools/PoseSelector.vue'
 import BackgroundColor from './Tools/BackgroundColor.vue'
-import Screenshot from './Tools/Screenshot.vue'
 
 const market = useMarket()
 
@@ -105,9 +90,10 @@ watch(showHeaderBool, () => {
 @import '@/utils/style/global_variables.less';
 
 #mobileCogL2d {
-  position: absolute;
-  top: 130px;
-  left: 10px;
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  z-index: 50;
 }
 
 #cogModal {
