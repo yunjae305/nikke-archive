@@ -94,7 +94,11 @@ watch(() => market.load.load, () => {
   }
 }
 
-html, body {
+html {
+  overflow-x: hidden;
+}
+
+body {
   background-color: @alt-dark-theme;
   overflow-x: hidden;
 }
