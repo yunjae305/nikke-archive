@@ -10,7 +10,7 @@
         :component="MenuOpenRound"
         @click="openDrawer()"
         class="iconDiv"
-        :size="80"
+        :size="48"
       />
     </div>
 
@@ -72,23 +72,24 @@ const closeDrawer = () => {
   height: 100px;
   display: flex;
   flex-direction: row;
+  align-items: center;
   width: 100%;
+  box-sizing: border-box;
+  padding: 0 16px;
   z-index: 100;
 
   .logo {
-    margin: 0 50px 0 50px;
-    height: 100px;
+    height: 60px;
     user-select: none;
   }
 
   .drawer-counter {
+    margin-left: auto;
 
     .iconDiv {
-      width: 100%;
-      text-align: right;
-      margin-right: 15px;
+      display: flex;
+      justify-content: flex-end;
     }
   }
-
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="header-wrapper">
     <HeaderMobile
       v-show="
         market.globalParams.isMobile &&
@@ -33,5 +33,9 @@ const nullifyOpacity = () => {
 <style lang="less">
 .no-opacity {
   visibility: hidden;
+}
+
+.header-wrapper {
+  overflow: hidden;
 }
 </style>

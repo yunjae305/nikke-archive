@@ -87,6 +87,11 @@ watch(() => market.load.load, () => {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
+
+  @media (max-width: 900px) {
+    background-attachment: scroll;
+    background-position: center top;
+  }
 }
 
 body {

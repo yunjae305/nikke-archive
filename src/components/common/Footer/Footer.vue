@@ -46,4 +46,28 @@
     line-height: 1.4;
   }
 }
+
+@media (max-width: 900px) {
+  .n-card {
+    position: static;
+    margin-top: 16px;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    gap: 6px;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  .footer-notice {
+    position: static;
+    align-items: center;
+
+    span {
+      font-size: 11px;
+      text-align: center;
+    }
+  }
+}
 </style>
