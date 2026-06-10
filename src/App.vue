@@ -94,8 +94,9 @@ watch(() => market.load.load, () => {
   }
 }
 
-body {
+html, body {
   background-color: @alt-dark-theme;
+  overflow-x: hidden;
 }
 
 .n-a {
@@ -110,6 +111,12 @@ body {
 
 .mobileScroll {
   max-height: -webkit-fill-available;
+}
+
+.n-scrollbar,
+.n-scrollbar-container,
+.n-scrollbar-content {
+  background-color: transparent !important;
 }
 
 .n-icon {
