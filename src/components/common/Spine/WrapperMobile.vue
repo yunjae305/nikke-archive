@@ -6,6 +6,9 @@
       id="mobileCogL2d"
       @click="showCogModal()"
     />
+    <div id="mobilePoseSelector">
+      <PoseSelector />
+    </div>
     <BackgroundColor v-show="false" />
     <n-modal v-model:show="isCogModalVisible" id="cogModal">
       <n-card title="Options" :bordered="false" size="huge" role="dialog">
@@ -29,14 +32,6 @@
 
                 <template #unchecked> The header is currently hidden </template>
               </n-switch>
-              <br />
-            </div>
-            <div>
-              <div class="poseSelector">
-                <span>
-                  <PoseSelector />
-                </span>
-              </div>
             </div>
           </n-tab-pane>
 
@@ -94,6 +89,16 @@ watch(showHeaderBool, () => {
   top: 16px;
   left: 16px;
   z-index: 50;
+}
+
+#mobilePoseSelector {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  z-index: 50;
+  background-color: rgba(33, 37, 41, 0.65);
+  border-radius: 10px;
+  padding: 8px 14px;
 }
 
 #cogModal {
