@@ -117,6 +117,15 @@ body {
   max-height: -webkit-fill-available;
 }
 
+@media (max-width: 900px) {
+  .spine-player-controls {
+    position: fixed !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+  }
+}
+
 .n-scrollbar,
 .n-scrollbar-container,
 .n-scrollbar-content {

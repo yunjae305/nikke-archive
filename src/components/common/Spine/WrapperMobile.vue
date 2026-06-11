@@ -99,7 +99,7 @@ const hideCogModal = () => {
 
 #mobilePoseSelector {
   position: fixed;
-  bottom: 16px;
+  bottom: 72px;
   left: 16px;
   z-index: 50;
   background-color: rgba(33, 37, 41, 0.65);
